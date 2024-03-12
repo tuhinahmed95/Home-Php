@@ -1,0 +1,2 @@
+this is my fopen and fread and fclose file.
+this is my second fopen and fread and fcolse file.
