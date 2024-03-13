@@ -6,41 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome To My Home Page</h1>
-    
-    <form action="#" method = "POST"> 
-      Username :  <input type="text" name ="textname"><br><br>
-      Password :  <input type="password" name = "txtpass"><br><br>
-        <input type="submit" name="submit" value = "login">
-    </form>
-
+    <center> 
+        <h1>Welcome To My Home Page</h1>
+        <form action="#" method = "post"> 
+            <input type="text" name ="username"><br><br>
+            <input type="password" name = "password"><br><br>
+            <input type="submit" name ="btnsubmit" value ="login">
+        </form>
+    </center>
     
 </body>
 </html>
 
-
-
 <?php
-session_start();
-if(isset($_POST["submit"])){ 
-    $username = $_POST["textname"];
-    $password = $_POST["txtpass"];
 
-    if($username=="admin" && $password=="12345"){ 
-        $_SESSION["fname"]=$username;
+session_start();
+
+if(isset($_POST['btnsubmit'])){ 
+    $user_name = $_POST['username'];
+    $pass_word = $_POST['password'];
+
+    if($user_name=="tuhin" && $pass_word=="12345"){ 
+        $_SESSION['fname']=$user_name;
         header("location:demo.php");
     }
-    else { 
-        $msg = "username and password is incorect";
+    else{ 
+        $messege="username or password is not correct";
     }
 }
-    
 
 
 
 ?>
-
-    <?php
-        echo isset ($msg)? $msg:"";
-    ?>
-    

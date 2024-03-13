@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is a form</h1>
-    <form action="#" method = "post"> 
-      ID :  <input type="number" name = "txtid"><br><br>
-      NAME :  <input type="text" name = "txtname"><br><br>
-     EMAIL :   <input type="text" name = "email"><br><br>
-     PHONE :   <input type="number" name = "phnnum"><br><br>
-
-        <input type="submit" name = "submit" value = "submit">
-        <button><a href="logout.php">logout</a></button>
-    </form>
+    <center> 
+        <h1>This Is A Form</h1>
+        <form action="$" method ="post"> 
+         Id:  <input type="text" name = "txtid"><br><br>
+         Name : <input type="text" name = "txtname"><br><br>
+         Email : <input type="text" name = "email"><br><br>
+         Phone : <input type="number" name ="phn"><br><br>
+         <input type="submit" name ="submit" value ="submit">
+         <button><a href="logout.php">logout</a></button>
+        </form>
+    </center>
     
 </body>
 </html>
 
 <?php
+
 session_start();
-if(!isset($_SESSION["fname"])){ 
+
+if(!isset($_SESSION['fname'])){ 
     header("location:login.php");
 }
+
 
 ?>

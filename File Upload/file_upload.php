@@ -35,4 +35,7 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-
+<?php
+if(isset($_FILES['file_name'])){ 
+    echo "<img src '$folder/$file_name' width='300px'>";
+}

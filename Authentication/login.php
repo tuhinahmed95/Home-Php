@@ -1,44 +1,45 @@
-<?php session_start();
-  
-  if(isset($_POST["btnLogin"])){
-	  
-	  $username=$_POST["txtUsername"];
-	  $password=$_POST["txtPassword"];
-	  
-    if ($username=="admin" && $password=="123"){ 
-			 $_SESSION["sname"]=$username;
-       header("location:demo.php");
-  } 
-  else{ 
-    $msg="Username or Password is incorrect!";
-  }
-	
-  }
-
-?>
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication</title>
 </head>
-
 <body>
- <?php
-   echo isset($msg)?$msg:"";
- ?>
- <form action="#" method="post">
-   <div>
-    Username<br/>
-    <input type="text" name="txtUsername" />
-   </div>
-   <div>
-    Password<br/>
-    <input type="password" name="txtPassword" />
-   </div>
-   <div>
-    <input type="submit" value="Log In" name="btnLogin" />
-   </div>
- </form>
+
+  <div>
+    <center>
+      <h1>This IS A Home Page</h1>
+      <form action="#" method = "post"> 
+        <input type="text" name ="username"><br><br>
+        <input type="number" name ="password"><br><br>
+        <input type="submit" name ="btn" value ="submit">
+      </form>
+    </center>
+
+  </div>
+  
 </body>
 </html>
+
+<?php
+
+session_start();
+if(isset($_POST['btn'])){ 
+  $userName = $_POST['username'];
+  $passWord = $_POST['password'];
+
+  if($userName=="Tuhin" && $passWord=="09876"){ 
+    $_SESSION ['suppos']=$userName;
+    header("location:demo.php");
+  }
+  else{ 
+    $messege = "username or password is not correct";
+  }
+}
+
+?>
+
+<?php
+  echo isset($messege)?$messege:"";
+?>
