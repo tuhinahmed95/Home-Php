@@ -6,36 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method = "post" enctype = "multipart/form-data"> 
-        <input type="file" name ="fname"><br><br>
-        <input type="submit" name ="submit">
+
+    <form action="#" method = "post" enctype="multipart/form-data"> 
+        <input type="file" name="filename">
+        <input type="submit" name = "submit">
     </form>
     
 </body>
 </html>
 
-<?php
-echo "<pre>"; 
-    print_r($_FILES);
-echo"</pre>";
 
-if(isset($_POST['submit'])){ 
-    $file_name = $_FILES['fname'];
-    $tmp_name = $_FILES['fname']['tmp_name'];
-    $file_size = $_FILES['fname']['size'];
-    $folder = "images/";
+<?php
+
+    //echo "<pre>";
+    //    print_r($_FILES);
+  //  echo  "</pre>";
+
+
+if(isset($_FILES['filename'])){ 
+    $file_name = $_FILES['filename']['name'];
+    $tmp_name = $_FILES['filename']['tmp_name'];
+    // $file_type = $_FILES['filename']['type'];
+     $file_size = $_FILES['filename']['size'];
+    $folder = "images/"; 
     $kb = $file_size/1024;
 
+    
+
     if($kb>400){ 
-        echo "file is too large";
+        echo "File is too large";
     }
     else{ 
-        move_uploaded_file($tmp_name,$folder.$file_name);
-        echo "succesfully";
+        move_uploaded_file( $tmp_name,$folder.$file_name);
+        echo "Succesfully";
+
     }
+   
 }
+
 ?>
+
 <?php
-if(isset($_FILES['file_name'])){ 
-    echo "<img src '$folder/$file_name' width='300px'>";
+
+if(isset($_FILES['filename'])){ 
+    echo "<image src='$folder/$file_name' width='300px'>";
 }
+
+?> 
