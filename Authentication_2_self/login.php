@@ -36,5 +36,8 @@ if(isset($_POST['btnsubmit'])){
 }
 
 
+?>
 
+<?php
+echo isset($messege)?$messege:"";
 ?>
