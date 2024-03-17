@@ -39,8 +39,10 @@ if(isset($_POST['btn'])){
 }
 
 ?>
-
+    
 <?php
+        //display the upload image
+
     if(isset($upload)){ 
         echo "<h1>File Upload Succesfully</h1>";
         echo "<img src='$folder/$file_name' width='300px' >";
