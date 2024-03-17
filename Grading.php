@@ -7,7 +7,7 @@
 
 <?php    
 
-$num = $_POST['fname'];
+$num = $_POST['fname'] 
 
 
 if($num >=80 && $num<=100){ 
