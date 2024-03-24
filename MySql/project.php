@@ -3,7 +3,7 @@
 require_once("dbconnect.php");
 
 // Fetch data in descending order (lastest entry first)
-$result = mysqli_query($mysqli, "SELECT * FROM student_details ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM student_details ORDER BY Roll DESC");
 // or
 // $user = $mysqli->query("select * from user");
 
@@ -33,7 +33,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM student_details ORDER BY id DESC"
 		while ($res = mysqli_fetch_assoc($result)) {
 				echo "<tr>";
 				echo "<td>".$res['Roll']."</td>";
-				echo "<td>".$res['name']."</td>";
+				echo "<td>".$res['Name']."</td>";
 				echo "<td>".$res['Gender']."</td>";
 				echo "<td>".$res['Age']."</td>";
 				echo "<td>".$res['GPA']."</td>";
