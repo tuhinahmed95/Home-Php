@@ -36,7 +36,41 @@ if(isset($_POST['btn'])){
         <td><input type="submit" name="btn" value="submit"></td>
     </tr
 
+
     
 </form>
+<br><br><br>
 
+<?php
 
+if(isset($_POST['btnsub'])){ 
+    $name = $_POST['name'];
+    $price = $_POST['price'];
+    $menu = $_POST['manu'];
+
+    $conn->query("call pro_product('$name','$price','$menu')");
+}
+
+?>
+
+<form action="#" method="post"> 
+    <tr> 
+        <td><label for="name">Name</label></td><br>
+        <td><input type="text" name="name"></td><br>
+    </tr>
+
+    <tr> 
+        <td><label for="price">Price</label></td><br>
+        <td><input type="text" name="price"></td><br>
+    </tr>
+
+    <tr> 
+        <td><label for="manu">Menufacture Id</label></td><br>
+        <td><input type="text" name="manu"></td><br>
+    </tr>
+
+    <tr> 
+        
+        <td><input type="submit" name="btnsub" value="submit"></td><br>
+    </tr>
+</form>
