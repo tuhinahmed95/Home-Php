@@ -7,7 +7,7 @@ if(isset($_POST['btn'])){
     $a_address = $_POST['address'];
     $c_contact = $_POST['contact'];
 
-    $conn->query("call pro_manufacture('$f_name','a_address','c_contact')");
+    $conn->query("call pro_manufacture('$f_name','$a_address','$c_contact')");
 }
 
 ?>
@@ -94,3 +94,39 @@ if(isset($_POST['btnsub'])){
         <td><input type="submit" name="btnsub" value="submit"></td><br>
     </tr>
 </form>
+
+
+
+<h1>View Product</h1>
+
+<table border="1" style="border-collapse: collapse;"> 
+
+            <tr> 
+                <td>Id</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Mname</td>
+                <td>Address</td>
+                <td>Contact</td>
+            </tr>
+
+            <?php
+            $product = $conn->query("select * from vie_product");
+            while(list($id,$name,$price,$mname,$address,$contact) = $product->fetch_row()){ 
+
+                echo "<tr> 
+                
+                            <td>$id</td>
+                            <td>$name</td>
+                            <td>$price</td>
+                            <td>$mname</td>
+                            <td>$address</td>
+                            <td>$contact</td>
+                
+                    </tr>";
+            }
+
+
+            ?>
+
+</table>
