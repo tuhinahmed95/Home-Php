@@ -14,8 +14,9 @@ if(isset($_POST['btn'])){
 
 
 
-
+    <h1>Menufacture Table</h1>
 <form action="#" method="post"> 
+   
     <tr> 
         <td><label for="fname">Name</label></td><br>
         <td><input type="text" name="fname"></td><br>
@@ -52,8 +53,9 @@ if(isset($_POST['btnsub'])){
 }
 
 ?>
-
+    <h1>Product Table</h1>
 <form action="#" method="post"> 
+    
     <tr> 
         <td><label for="name">Name</label></td><br>
         <td><input type="text" name="name"></td><br>
@@ -66,7 +68,25 @@ if(isset($_POST['btnsub'])){
 
     <tr> 
         <td><label for="manu">Menufacture Id</label></td><br>
-        <td><input type="text" name="manu"></td><br>
+        <td><input type="text" name="manu"></td><br><br>
+    </tr>
+
+    <tr> 
+        <td><label for="menufac">Menufacture Name</label></td>
+
+        <td> 
+           <select name="menufac"> 
+            <?php
+
+            $menufac =$conn->query("select * From manufacture");
+            while(list($mid,$name)=$menufac->fetch_row()){ 
+                echo "<option value='$mid'>$name</option>";
+            }
+
+            ?>
+           </select> 
+        </td>
+       
     </tr>
 
     <tr> 
