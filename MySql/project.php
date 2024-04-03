@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-//this is the connect
+
 require_once("dbconnect.php");
 
 // Fetch data in descending order (lastest entry first)
