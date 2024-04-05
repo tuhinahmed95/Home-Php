@@ -1,138 +1,145 @@
-<?php
+<?php 
+$db = new mysqli('localhost','root','','company');
 
-$conn = new mysqli ("localhost","root","","company");
-
-if(isset($_POST['btn'])){ 
-    $f_name =  $_POST['fname'];
-    $a_address = $_POST['address'];
-    $c_contact = $_POST['contact'];
-
-    $conn->query("call pro_manufacturer('$f_name','$a_address','$c_contact')");
+if(isset($_POST['btnSubmit'])){
+	$mname = $_POST['mname'];
+    $address = $_POST['address'];
+	$contact = $_POST['contact'];
+	$db->query(" call pro_manufacturer('$mname','$address',$contact') ");
 }
+
+
+if(isset($_POST['addProduct'])){
+	$pname = $_POST['pname'];
+	$price = $_POST['price'];
+    $manu = $_POST['manu'];
+	$mid = $_POST['manufac'];
+	$db->query(" call pro_product('$pname','$price','$manu',$mid') ");
+}
+
+
+if(isset($_POST['delmanufact'])){
+	$mid = $_POST['manufac'];
+	$db->query(" delete from manufacturer where id='$mid ' ");
+}
+
 
 ?>
 
+<h3>Manufacturer table</h3>
+<form action="#" method="post">
+	<table>
+		<tr>
+			<td><label for="mname">Name</label></td>
+			<td><input type="text" name="mname" /></td>
+		</tr>
 
+		<tr>
+			<td><label for="address">Address</label></td>
+			<td><input type="text" name="address" /></td>
+		</tr>
 
-    <h1>Menufacture Table</h1>
-<form action="#" method="post"> 
-   
-    <tr> 
-        <td><label for="fname">Name</label></td><br>
-        <td><input type="text" name="fname"></td><br>
-    </tr>
+        <tr>
+			<td><label for="contact">Contact</label></td>
+			<td><input type="text" name="contact" /></td>
+		</tr>
 
-    <tr> 
-        <td><label for="address">Address</label></td><br>
-        <td><input type="text" name="address"></td><br>
-    </tr
+		<tr> 
+			<td></td>
+			<td><input type="submit" name="btnSubmit" value="submit" /></td>
+		</tr>
 
-    <tr> 
-        <td><label for="contact">Contact No</label></td><br>
-        <td><input type="text" name="contact"></td><br>
-    </tr
-
-    <tr> 
-        
-        <td><input type="submit" name="btn" value="submit"></td>
-    </tr
-
-
-    
+	</table>
 </form>
-<br><br><br>
 
-<?php
+<h3>Product table</h3>
+<form action="#" method="post">
+	<table>
+		<tr>
+			<td><label for="pname">Name</label></td>
+			<td><input type="text" name="pname" /></td>
+		</tr>
 
-if(isset($_POST['btnsub'])){ 
-    $name = $_POST['name'];
-    $price = $_POST['price'];
-    $menu = $_POST['manu'];
-    $manufac = $_POST['menufac'];
+		<tr>
+			<td><label for="price">Price</label></td>
+			<td><input type="text" name="price" /></td>
+		</tr>
 
-    
-    $conn->query("call pro_product('$name','$price','$menu','$manufac')");
-}
+        <tr>
+			<td><label for="manu">Manufacture Id</label></td>
+			<td><input type="text" name="manu" /></td>
+		</tr>
 
-?>
-    <h1>Product Table</h1>
-<form action="#" method="post"> 
-    
-    <tr> 
-        <td><label for="name">Name</label></td><br>
-        <td><input type="text" name="name"></td><br>
-    </tr>
-
-    <tr> 
-        <td><label for="price">Price</label></td><br>
-        <td><input type="text" name="price"></td><br>
-    </tr>
-
-    <tr> 
-        <td><label for="manu">Menufacture Id</label></td><br>
-        <td><input type="text" name="manu"></td><br><br>
-    </tr>
-
-    <tr> 
-        <td><label for="menufac">Menufacture Name</label></td>
-
-        <td> 
-           <select name="menufac"> 
-            <?php
-
-            $menufac =$conn->query("SELECT * FROM manufacturer");
-            while(list($mid,$name)=$menufac->fetch_row()){ 
-                echo "<option value='$mid'>$name</option>";
-            }
-
-            ?>
-           </select> 
-        </td>
-       
-    </tr>
-
-    <tr> 
-        
-        <td><input type="submit" name="btnsub" value="submit"></td><br>
-    </tr>
+		<tr>
+			<td><label for="manufac">Manufacturer Name</label></td>
+			<td>
+				<select name="manufac">
+					<?php 
+						$manufac = $db->query("select * from manufacturer");
+						while(list($_mid,$_mname) = $manufac->fetch_row()){
+							echo "<option value='$_mid'>$_mname</option>";
+						}
+					?>
+				</select>
+			</td>
+		</tr>
+		<tr> 
+			<td></td>
+			<td><input type="submit" name="addProduct" value="submit" /></td>
+		</tr>
+	</table>
 </form>
 
 
-
-<h1>View Product</h1>
-
-<table border="1" style="border-collapse: collapse;"> 
-
-            <tr> 
-                <td><strong>ID</strong></td>
-                <td><strong>Name</strong></td>
-                <td><strong>Address</strong></td>
-                <td><strong>Contact</strong></td>
-                <td><strong>P Name</strong></td>
-                <td><strong>Price</strong></td>
-                <td><strong>Manufacture Id</strong></td>
-                
-
-            </tr>
-
-            <?php
-            $product = $conn->query("SELECT * FROM vie_product");
-            while(list($id,$name,$address,$contact,$pname,$price,$manu) = $product->fetch_row()){ 
-
-                echo "<tr> 
-                
-                            <td>$id</td>
-                            <td>$name</td>
-                            <td>$address</td>
-                            <td>$contact</td>
-                            <td>$pname</td>
-                            <td>$price</td>
-                            <td>$manu</td>
-
-                    </tr>";
-            }
+<form action="#" method="post">
+	<table>
+		<tr>
+			<td><label for="manufac">Manufacturer</label></td>
+			<td>
+				<select name="manufac">
+					<?php 
+						$manufac = $db->query("select * from manufacturer");
+						while(list($_mid,$_mname) = $manufac->fetch_row()){
+							echo "<option value='$_mid'>$_mname</option>";
+						}
+					?>
+				</select>
+			</td>
+		</tr>
+		<tr> 
+			<td></td>
+			<td><input type="submit" name="delmanufact" value="delete" /></td>
+		</tr>
+	</table>
+</form>
 
 
-            ?>
 
+<h3>View Product</h3>
+
+<table border="1" style="border-collapse: collapse;" > 
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Address</th>
+		<th>Contact</th>
+		<th>P Name</th>
+		<th>Price</th>
+		<th>Manufacture Id</th>
+	</tr>
+	<?php 
+		$product = $db->query(" select * from vie_product ");
+		while(list($id,$name,$address,$contact,$p_name,$price,$manufacture) = $product->fetch_row()){
+			echo "<tr> 
+					<td>$id</td>
+					<td>$name</td>
+					<td>$address</td>
+					<td>$contact</td>
+					<td>$p_name</td>
+					<td>$price</td>
+					<td>$manufacture</td>
+				</tr>";
+		}
+	
+	?>
 </table>
