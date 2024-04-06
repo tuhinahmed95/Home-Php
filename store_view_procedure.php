@@ -1,5 +1,5 @@
 <?php
-//this is a store procedure 
+
     $conn = new mysqli('localhost','root','','company');
 
     if(isset($_POST['btn'])){ 
