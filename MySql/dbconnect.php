@@ -1,4 +1,6 @@
 <?php
+//this is connet to mysql
+
 $databaseHost = 'localhost';
 $databaseName = 'college';
 $databaseUsername = 'root';
