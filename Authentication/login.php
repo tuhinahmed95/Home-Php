@@ -21,7 +21,7 @@
   
 </body>
 </html>
-//this is a login page
+
 
 <?php
 
