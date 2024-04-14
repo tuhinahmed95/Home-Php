@@ -1,5 +1,5 @@
 
-
+//this is result in php
 <form method = "Post">  
    <h1>Result</h1> <input type="number" name = "fname">
     <input type="submit" name = "submit">
