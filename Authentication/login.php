@@ -6,7 +6,7 @@
   <title>Authentication</title>
 </head>
 <body>
-//this is my login page
+
   <div>
     <center>
       <h1>This IS A Home Page</h1>
