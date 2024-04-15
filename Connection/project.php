@@ -4,7 +4,7 @@ require_once("connect.php");
 $result = mysqli_query($conn, "SELECT * from student_details order by Roll desc");
 
 ?>
-
+//this is connect page
 <html> 
     <head> 
         <title>Home Page</title>
