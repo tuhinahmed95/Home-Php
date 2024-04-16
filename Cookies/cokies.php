@@ -2,7 +2,7 @@
 
 echo "Welcome to the world of cokies<br>";
 
-//yntax to set of cokie
+//yntax to set of cokie 
 
 //echo time();
 
