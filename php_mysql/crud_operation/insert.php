@@ -1,6 +1,22 @@
 <?php
+$connectDB = mysqli_connect("localhost","root","","college");
 if(isset($_POST['btn'])){ 
-    echo "ok";
+    $id     = $_POST['id'];
+    $name   = $_POST['name'];
+    $roll   = $_POST['roll'];
+    $email  = $_POST['email'];
+    $city   = $_POST['city'];
+
+    $sql    =  "INSERT INTO student(id,name,roll,email,city) VALUES ('$id','$name','$roll','$email','$city')";
+   
+
+    if(mysqli_query ($connectDB,$sql ) == TRUE){ 
+        echo "Data Inserted Succesfully";
+        header("location:insert.php");
+    }
+    else{ 
+        echo "Data Is Not Inserted";
+    }
 }
 
 ?>
@@ -16,7 +32,7 @@ if(isset($_POST['btn'])){
     <title>Crud Operation</title>
 </head>
 <body>
-    <fieldset style= width="60%" height="400px"> 
+    
         <legend>Student Registration Form</legend>
     <form action="insert.php" method="POST" style=width="60%" height="400px">  
         ID <br>
@@ -31,7 +47,7 @@ if(isset($_POST['btn'])){
         <input type="text" name="city"><br><br>
         <input type="submit" name="btn" value="submit">
     </form>
-    </fieldset>
+  
     
 </body>
 </html>
