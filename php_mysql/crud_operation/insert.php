@@ -1,22 +1,25 @@
 <?php
 $connectDB = mysqli_connect("localhost","root","","college");
 if(isset($_POST['btn'])){ 
-    $id     = $_POST['id'];
-    $name   = $_POST['name'];
-    $roll   = $_POST['roll'];
-    $email  = $_POST['email'];
-    $city   = $_POST['city'];
+    $id   =      $_POST['id'];
+    $name = $_POST['name'];
+     $roll =    $_POST['roll'];
+    $email=   $_POST['email'];
+    $city =   $_POST['city'];
 
-    $sql    =  "INSERT INTO student(id,name,roll,email,city) VALUES ('$id','$name','$roll','$email','$city')";
-   
+    $sql = "INSERT INTO student(id,name,roll,email,city) VALUES('$id','$name','$roll','$email','$city')";
 
-    if(mysqli_query ($connectDB,$sql ) == TRUE){ 
-        echo "Data Inserted Succesfully";
+    if(mysqli_query($connectDB,$sql) == TRUE){ 
+        echo "Data Inserted Succesfull";
         header("location:insert.php");
     }
     else{ 
         echo "Data Is Not Inserted";
-    }
+    } 
+
+    
+
+   
 }
 
 ?>
