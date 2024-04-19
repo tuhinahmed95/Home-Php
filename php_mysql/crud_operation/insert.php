@@ -38,11 +38,11 @@ if(isset($_POST['btn'])){
 <body>
 
    
-   
-        <div class="col-sm-3">
-        </div>
+     
+       
+       
 
-        <div class="col-sm-6 pt-4 mt-3 border border-success"> 
+         
 
         <h3>Registration Form</h3>
 
@@ -62,9 +62,9 @@ if(isset($_POST['btn'])){
 
         </div>
 
-        <div class="col-sm-3"> 
-        </div>
-   
+         
+        
+    
   
     
 </body>
