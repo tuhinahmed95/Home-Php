@@ -37,8 +37,8 @@ if(isset($_POST['btn'])){
 </head>
 <body>
 
-   <div class="container"> 
-    <div class="row"> 
+   
+   
         <div class="col-sm-3">
         </div>
 
@@ -64,8 +64,8 @@ if(isset($_POST['btn'])){
 
         <div class="col-sm-3"> 
         </div>
-    </div>
-   </div>
+   
+  
     
 </body>
 </html>
