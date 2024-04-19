@@ -42,9 +42,9 @@ if(isset($_POST['btn'])){
         <div class="col-sm-3">
         </div>
 
-        <div class="col-sm-6"> 
+        <div class="col-sm-6 pt-4 mt-3 border border-success"> 
 
-        <h1>Registration Form</h1>
+        <h3>Registration Form</h3>
 
         <form action="insert.php" method="POST"> 
        
@@ -57,7 +57,7 @@ if(isset($_POST['btn'])){
         AC NUMBER <br>
         <input type="text" name="acnu"><br><br>
 
-        <input type="submit" name="btn" value="submit">
+        <input type="submit" name="btn" value="submit" class="btn btn-succes">
     </form>
 
         </div>
