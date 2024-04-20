@@ -19,6 +19,7 @@
                 <div class="col-sm-3"> </div>
 
                 <div class="col-sm-6 mt-4 border border-1">  
+                    <h3 class="">Registration Form</h3>
 
                 <form action="insert.php>" method="POST"> 
 
@@ -28,6 +29,7 @@
                 <input type="text" name="name"><br><br>
                 Email <br>
                 <input type="text" name="email"><br><br>
+                <input type="submit" name="btn" value="submit" class="btn btn-success">
                 
             
                 </form> 
