@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-sm-3"> </div>
 
-                <div class="col-sm-6 mt-4">  
+                <div class="col-sm-6 mt-4 border border-1">  
 
                 <form action="insert.php>" method="POST"> 
 
@@ -26,6 +26,8 @@
                 <input type="text" name="id"><br><br>
                 Name <br>
                 <input type="text" name="name"><br><br>
+                Email <br>
+                <input type="text" name="email"><br><br>
                 
             
                 </form> 
