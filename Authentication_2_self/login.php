@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    //this is my login page
+    
     <center> 
         <h1>Welcome To My Home Page</h1>
         <form action="#" method = "post"> 
