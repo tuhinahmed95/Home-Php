@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+ 
+
 </head>
 <body>
     <div class="container">
         <center> 
             <div class="login-form">
+                <fieldset class="field">
             <h1>Login</h1>
             <form action="#" method = "post"> 
                 Username <br>
                 <input type="text" name ="username"><br><br>
                 Password <br>
                 <input type="password" name = "password"><br><br>
-                <input type="submit" name ="btnsubmit" value ="login">
+                <input type="submit" class="btn" name ="btnsubmit" value ="login">
             </form>
+            </fieldset>
             </div>
         </center>
         

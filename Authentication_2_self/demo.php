@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="form-container">
-    <center> 
-        <div class="sub-form">
-
-        <h1>This Is A Form</h1>
+    <center>
+   
+        <div class="sub-form demoField">
+        <fieldset class="field "> 
+        <h1>Registration Form</h1>
         <form action="#" method ="post"> 
           Id <br>
           <input type="text" name = "txtid"><br><br>
@@ -25,8 +26,10 @@
          <input type="submit" name ="submit" value ="submit">
          <button><a href="logout.php">logout</a></button>
         </form>
-
+        
+        </fieldset>
         </div>
+        
     </center>
     </div>
     
