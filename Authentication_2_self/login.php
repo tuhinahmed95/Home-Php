@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <center> 
-        <h1>Welcome To My Home Page</h1>
-        <form action="#" method = "post"> 
-            <input type="text" name ="username"><br><br>
-            <input type="password" name = "password"><br><br>
-            <input type="submit" name ="btnsubmit" value ="login">
-        </form>
-    </center>
+    <div class="container">
+        <center> 
+            <div class="login-form">
+            <h1>Login</h1>
+            <form action="#" method = "post"> 
+                Username <br>
+                <input type="text" name ="username"><br><br>
+                Password <br>
+                <input type="password" name = "password"><br><br>
+                <input type="submit" name ="btnsubmit" value ="login">
+            </form>
+            </div>
+        </center>
+        
+    </div>
     
 </body>
 </html>
@@ -27,8 +34,8 @@ if(isset($_POST['btnsubmit'])){
     $user_name = $_POST['username'];
     $pass_word = $_POST['password'];
 
-    if($user_name=="tuhin" && $pass_word=="12345"){ 
-        $_SESSION['fname']=$user_name;
+    if($user_name=="syntax" && $pass_word=="12345"){ 
+        $_SESSION['syntax']=$user_name;
         header("location:demo.php");
     }
     else{ 

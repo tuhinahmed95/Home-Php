@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="form-container">
     <center> 
+        <div class="sub-form">
+
         <h1>This Is A Form</h1>
-        <form action="$" method ="post"> 
-         Id:  <input type="text" name = "txtid"><br><br>
-         Name : <input type="text" name = "txtname"><br><br>
-         Email : <input type="text" name = "email"><br><br>
-         Phone : <input type="number" name ="phn"><br><br>
+        <form action="#" method ="post"> 
+          Id <br>
+          <input type="text" name = "txtid"><br><br>
+          Name  <br>
+         <input type="text" name = "txtname"><br><br>
+          Email  <br>
+          <input type="text" name = "email"><br><br>
+          Phone  <br>
+          <input type="number" name ="phn"><br><br>
          <input type="submit" name ="submit" value ="submit">
          <button><a href="logout.php">logout</a></button>
         </form>
+
+        </div>
     </center>
+    </div>
     
 </body>
 </html>
@@ -26,7 +37,7 @@
 
 session_start();
 
-if(!isset($_SESSION['fname'])){ 
+if(!isset($_SESSION['syntax'])){ 
     header("location:login.php");
 }
 
