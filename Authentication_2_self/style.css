@@ -1,0 +1,56 @@
+.container{ 
+    width: 100%;
+    height: 600px;
+    background-image: url("bgimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.login-form{ 
+    width: 40%;
+    color: black;
+
+    padding-top: 150px;
+  
+    
+}
+
+.demoField{
+    padding-top:80px ;
+}
+
+.field{
+    backdrop-filter: blur(10px);
+    background-color: rgba(250, 252, 251, 0.132);
+    border-radius: 20px;
+}
+
+
+.btn{
+    padding: 8px 16px;
+    color: whitesmoke;
+    background-color: rgb(56, 197, 93);
+}
+.login-form h1{ 
+    color: white;
+}
+
+.form-container{ 
+    background-image: url("bgimage2.jpg");
+    width: 100%;
+    height: 600px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+ 
+    
+
+.sub-form{ 
+    width: 60%;
+}
+input{ 
+    padding: 8px;
+    border-radius: 12px;
+}
