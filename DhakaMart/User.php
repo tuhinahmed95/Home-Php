@@ -177,7 +177,7 @@
         <input type="text" name="email"><br><br>
 
         <label for="role_id">Role_Id</label>
-        <input type="text" name="role_id"><br><br>
+        <input type="text" name="role_id"><br>
 
         <input type="submit" name="user_btn" value="submit"> 
       </form>
