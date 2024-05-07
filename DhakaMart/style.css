@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+/* font setup */
+.font-rancho{
+  font-family: "Rancho", cursive;
+}
+            /* Product Table CSS Done By Meem */
+
+            .view-details {
+              background-color: #027f4b;
+              color: white;
+              border: none;
+              padding: 10px 10px;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 16px;
+            }
+            
+            
+            .view-details:hover {
+              background-color: #006647;
+            }
+            
+            .view-details i {
+              margin-right: 0;
+            }
+            
+            
+            
+            
+            
+            /* Button Styles */
+            .add-product-btn {
+              text-align: right;
+              padding-right: 80px;
+            }
+            
+            .add-product-btn button {
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            }
+            
+            .add-product-btn button:hover {
+              background-color: #0056b3;
+            }
+            
+            .add-product-btn i {
+              margin-right: 5px;
+            }
+            
+            
+            
+            
+            
+            /* View Products Table */
+            .custom-table {
+              width: 100%;
+              border-collapse: collapse;
+            }
+            
+            .custom-table th, .custom-table td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+            }
+            
+            .custom-table th {
+              background-color: #007bff ;
+              color: white;
+            }
+            
+            .custom-table tbody tr:nth-child(even) {
+              background-color: #f2f2f2;
+            }
+            
+            .custom-table tbody tr:hover {
+              background-color: #ddd;
+            }
+            
+            .custom-table .view-details {
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 8px 12px;
+              border-radius: 5px;
+              cursor: pointer;
+              text-decoration: none;
+            }
+            
+            .custom-table .view-details i {
+              margin-right: 5px;
+            }
+            
+            .custom-table .view-details:hover {
+              background-color: #004b9a;
+            }
+            
+            
+            
+            /* Edit Product */
+            
+            .edit-table {
+              width: 100%;
+              border-collapse: collapse;
+            }
+            
+            .edit-table th, .edit-table td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+            }
+            
+            .edit-table th {
+              background-color: #007bff;
+              color: white;
+            }
+            
+            .edit-table tbody tr:nth-child(even) {
+              background-color: #f2f2f2;
+            }
+            
+            .edit-table tbody tr:hover {
+              background-color: #ddd;
+            }
+            
+            .edit-table select {
+              padding: 5px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+              font-size: 14px;
+            }
+            
+            .edit-table input[type="text"] {
+              width: 100%;
+              padding: 5px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+              font-size: 14px;
+            }
+            
+            .edit-table button {
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 8px 12px;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+            
+            .edit-table button:hover {
+              background-color: #0056b3;
+            }
+            
+            
+            
+            /* Add Product Modal */
+            
+            .product-form {
+              max-width: 400px;
+              margin: 0 auto;
+              padding: 20px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              background-color: #f9f9f9;
+            }
+            
+            .input-field, .select-field {
+              width: 80%;
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+              outline-color: #99c3ef;
+            }
+            
+            .input-field[type="file"] {
+              padding: 5px;
+            }
+            
+            .input-field[type="text"] {
+              width: calc(100% - 40px);
+            }
+            
+            .select-field {
+              appearance: none;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>');
+              background-repeat: no-repeat;
+              background-position: right 10px top 50%;
+              background-size: 16px auto;
+            }
+            
+            .select-field:focus {
+              outline: none;
+            }
+            
+            label {
+              font-weight: bold;
+            }
+            
+            
+            
+            .modal_btn .btn {
+              background-color: #007bff; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 8px;
+            }
+            
+            .modal_btn .btn:hover {
+              background-color: #0056b3; /* Darker Green */
+            }
+            
+            /* Product Table CSS End */
+            
+            
+            
+            table,tr,td,th{
+              border: 1px solid black;
+              padding: 8px;
+            }
+            table{
+              border-radius: 10px;
+            }
+            
+            /* tuhin css */
+            
+
+
+.header{ 
+  padding: 20px;
+  background-color: azure;
+  height: 60px;
+}
+.first{ 
+  float: left;
+  padding-right: 190px;
+}
+.five{ 
+  float: left;
+  padding-right: 50px;
+  
+}
+.six{ 
+  float: left;
+  padding-right: 50px;
+}
+.seven{ 
+  float: left;
+  padding-left: 50px;
+}
+
+
+/* second div */
+.main{ 
+  padding-left: 15px;
+  height: 60px;
+  display: flex;
+  background-color: lightgrey;
+  border: 1px solid black;
+  text-align: center;
+}
+.first-div{ 
+  float: left;
+  padding-right: 50px;
+  
+}
+.second-div{ 
+  float: left;
+  padding-right: 50px;
+}
+.third-div{ 
+  float: left;
+  padding-left: 50px;
+
+}
+.four-div{ 
+  float: left;
+  padding-left: 50px;
+}
+.five-div{ 
+  float: left;
+  padding-left: 50px;
+}
+/* third div */
+.main-body{ 
+  padding: 20px;
+  height: 80px;
+  border: 1px solid gray;
+  background-color: burlywood;
+}
+.main-div-first{ 
+  float: left;
+ 
+}
+.main-div-second{ 
+  float: left;
+  padding-left: 50px;
+}
+.main-div-third{ 
+  float: left;
+  padding-left: 50px;
+}
+.main-div-four{ 
+  float: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+  border: 1px;
+}
+
+.footer{ 
+  width: 100%;
+
+  
+}
+.footer-div{ 
+  width: 58%;
+  height: 200px;
+  float: left;
+  background-color:blanchedalmond;
+  border: 1px solid black;
+
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: 5px;
+
+  
+}
+.footer-right-div{ 
+  width: 39%;
+  height: 200px;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: 1px solid black;
+  background-color:blanchedalmond;
+
+  
+}
+/* Shaheen css */
+            
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.active{
+  background-color:rgb(80, 243, 80);
+ display: inline;
+ padding: 4px;
+ color: #ffffff;
+ font-weight: bold;
+border-radius: 5px;
+
+
+}
+.user{
+  width: 100%;
+  height: 80px;
+}
+
+.user i{
+  margin-top: 25px;
+}
+
+
+/* user table */
+.user-form{ 
+  border: 1px solid black;
+}
+
+
+ 
