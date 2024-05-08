@@ -217,6 +217,7 @@ if (isset($_POST["delete_sub_cat"])) {
 }
 
 
+
 // user table
 $connect = mysqli_connect("localhost","root","","dhakamart");
 if(isset($_POST['user_btn'])){ 
@@ -230,6 +231,41 @@ if(isset($_POST['user_btn'])){
     }
     else{ 
         echo"Error: " .mysqli_error($connect);
+    }
+}
+
+
+if (isset($_POST['update_user'])) {
+    $id = $_POST["id"];
+    $name = $_POST["name"];
+    $email = $_POST['email'];
+    $role_id = $_POST['role_id'];
+
+
+    $sql = "UPDATE user SET name='$name', email='$email', role_id='$role_id'  WHERE id='$id'";
+    $query_run = mysqli_query($conn, $sql);
+
+    if ($query_run) {
+        header('Location:index.php?page=user');
+        exit;
+    } else {
+        echo "Error: " . mysqli_error($conn);
+    }
+}
+
+
+
+if (isset($_POST["delete_user"])) {
+    $id = $_POST['delete_user'];
+    $sql = "DELETE FROM user WHERE id='$id'";
+    $query_run = mysqli_query($conn, $sql);
+
+    if ($query_run) {
+
+        header('Location:index.php?page=user');
+        exit;
+    } else {
+        echo "Error: " . mysqli_error($conn);
     }
 }
 

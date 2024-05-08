@@ -32,26 +32,28 @@
             <div class="w-3/6 mx-auto">
                 <?php
                 if (isset($_GET['id'])) {
-                    $sID = $_GET['id'];
+                    $uID = $_GET['id'];
                     $conn = mysqli_connect('localhost', 'root', '', 'dhakamart');
-                    $query = "SELECT * FROM user WHERE id= '$sID' LIMIT 1";
+                    $query = "SELECT * FROM user WHERE id= '$uID' LIMIT 1";
                     $query_run = mysqli_query($conn,  $query);
                     if (mysqli_num_rows($query_run) > 0) {
                         foreach ($query_run as $row) {
                 ?>
                             <form action="ViewCode.php" method="post">
                                 <input name="id" value="<?php echo $row["id"] ?>" type="hidden" class="input-field"><br>
-                                <label for="name">User Name</label><br>
 
-
+                                <label for="name">Name</label><br>
                                 <input name="name" value="<?php echo $row["name"] ?>" type="text" id="name" class="input-field"><br>
 
+                                <label for="email">E-Mail</label><br>
+                                <input name="email" value="<?php echo $row["email"] ?>" type="email" id="email" class="input-field"><br>
 
-                                <label for="brand_id">Brand</label><br>
-                                <select  class="select-field" name="brand_id" id="brand_id">
+
+                                <label for="role_id">Role_User</label><br>
+                                <select  class="select-field" name="role_id" id="role_id">
                                     <?php
                                         $conn = mysqli_connect('localhost', 'root', '', 'dhakamart');
-                                        $query = "SELECT * FROM brand";
+                                        $query = "SELECT * FROM role";
                                         $query_run = mysqli_query($conn,  $query);
                                         if (mysqli_num_rows($query_run)>0) {
                                         foreach ($query_run as $row) {
@@ -63,26 +65,9 @@
                                     ?>
                                 
                                 </select><br>
-
-            
-                                <label for="cat_id">Category</label><br>
-                                <select  class="select-field" name="cat_id" id="cat_id">
-                                    <?php
-                                        $conn = mysqli_connect('localhost', 'root', '', 'dhakamart');
-                                        $query = "SELECT * FROM category";
-                                        $query_run = mysqli_query($conn,  $query);
-                                        if (mysqli_num_rows($query_run)>0) {
-                                        foreach ($query_run as $row) {
-                                        ?>
-                                        <option value="<?php echo $row['id']?>"><?php echo $row ['name']?></option>
-                                        <?php
-                                    }
-                                    }
-                                    ?>
-                                </select><br>
                             
                                 <div class="modal-action modal_btn">
-                                    <button class="btn" type="submit" name="update_sub_category">Update</button>
+                                    <button class="btn" type="submit" name="update_user">Update</button>
                                 </div>
 
                             </form>
