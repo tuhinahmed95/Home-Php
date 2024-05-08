@@ -225,8 +225,28 @@ if(isset($_POST['user_btn'])){
     $role_id = $_POST['role_id'];
     $userInsert = "INSERT INTO user(name,email,role_id)VALUES('$name','$email','$role_id')";
     $query = mysqli_query($connect,$userInsert);
-    if($query == true){ 
-        echo "data inserted succesfully";
-        
+    if($query){ 
+        header('location:index.php?page=user');
+    }
+    else{ 
+        echo"Error: " .mysqli_error($connect);
+    }
+}
+
+
+
+// role table
+$connect = mysqli_connect("localhost","root","","dhakamart");
+if(isset($_POST['user_btn'])){ 
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    
+    $userInsert = "INSERT INTO role(name,email)VALUES('$name','$email',)";
+    $query = mysqli_query($connect,$userInsert);
+    if($query){ 
+        header('location:index.php?page=user');
+    }
+    else{ 
+        echo"Error: " .mysqli_error($connect);
     }
 }
