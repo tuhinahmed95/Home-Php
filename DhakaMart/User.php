@@ -9,17 +9,14 @@
             <input name="name" type="text" id="name" class="input-field"><br>
 
             <label for="email">E-Mail</label><br>
-            <input name="email" type="text" id="name" class="input-field"><br>
-
-
-           
+            <input name="email" type="email" id="email" class="input-field"><br>
 
             
-            <label for="cat_id">Role_User</label><br>
-            <select  class="select-field" name="cat_id" id="cat_id">
+            <label for="role_id">Role_User</label><br>
+            <select  class="select-field" name="role_id" id="role_id">
                 <?php
                     $conn = mysqli_connect('localhost', 'root', '', 'dhakamart');
-                    $query = "SELECT * FROM user";
+                    $query = "SELECT * FROM role";
                     $query_run = mysqli_query($conn,  $query);
                     if (mysqli_num_rows($query_run)>0) {
                     foreach ($query_run as $row) {
@@ -37,7 +34,7 @@
             <div class="modal-action modal_btn">
                 <input type="text" name="test">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn" type="submit" name="add_sub_category">ADD</button>
+                <button class="btn" type="submit" name="user_btn">ADD</button>
             </div>
 
         </form>
@@ -79,7 +76,7 @@
             if (!$conn) {
                 die("Connection failed: " . mysqli_connect_error());
             }
-            $query = "SELECT user.id,user.name,user.email from user,role where user.role_id = role.id";
+            $query = "SELECT user.id,user.name,user.email, role.name rname from user,role  where user.role_id = role.id";
             $query_run = mysqli_query($conn,  $query);
             if (mysqli_num_rows($query_run) > 0) {
                 foreach ($query_run as $row) {
@@ -88,17 +85,18 @@
                         <th><?php echo $row["id"] ?></th>
                         <td><?php echo $row["name"] ?></td>
                         <td><?php echo $row["email"] ?></td>
+                        <td><?php echo $row["rname"] ?></td>
                         <td>
                             <!-- You can open the modal using ID.showModal() method -->
                             <div class="tooltip" data-tip="Edit">
 
-                                <a href="Sub_CategoryEdit.php?id=<?php echo $row["id"] ?>"><i style="color:green; font-size:20px;" class="fa-regular fa-pen-to-square"></i></a>
+                                <a href="user_edit.php?id=<?php echo $row["id"] ?>"><i style="color:green; font-size:20px;" class="fa-regular fa-pen-to-square"></i></a>
 
                             </div>
                             <!-- Delete Button -->
                             <div class="tooltip" data-tip="Delete">
                                 <form action="ViewCode.php" method="post">
-                                    <button type="submit" name="delete_sub_cat" value="<?php echo $row['id'] ?>"><i style="color:red; font-size:20px;" class="fa-regular fa-trash-can"></i></button>
+                                    <button type="submit" name="delete_user" value="<?php echo $row['id'] ?>"><i style="color:red; font-size:20px;" class="fa-regular fa-trash-can"></i></button>
                                 </form>
                             </div>
                             <!-- View details button -->

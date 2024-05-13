@@ -77,7 +77,6 @@
             ?>
                     <tr>
                         <th><?php echo $row["id"] ?></th>
-                        
                         <td><?php echo $row["name"] ?></td>
                         <td><?php echo $row["bname"] ?></td>
                         

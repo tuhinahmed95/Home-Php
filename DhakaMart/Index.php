@@ -60,6 +60,8 @@ if (!isset($_SESSION['admin'])) {
                     require("Sub_Category.php");
                 } elseif ($_GET["page"] === "brand") {
                     require("Brand.php");
+                } elseif ($_GET["page"] === "user") {
+                    require("User.php");
                 }
             } else {
                 require("Dashboard.php");
