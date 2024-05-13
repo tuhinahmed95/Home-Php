@@ -234,7 +234,7 @@ if(isset($_POST['user_btn'])){
     }
 }
 
-
+// user table updat
 if (isset($_POST['update_user'])) {
     $id = $_POST["id"];
     $name = $_POST["name"];
@@ -254,7 +254,7 @@ if (isset($_POST['update_user'])) {
 }
 
 
-
+// user table delete
 if (isset($_POST["delete_user"])) {
     $id = $_POST['delete_user'];
     $sql = "DELETE FROM user WHERE id='$id'";
