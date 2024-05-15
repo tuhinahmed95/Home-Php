@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- this is a file up -->
     <center> 
         <form action="#" method="post" enctype ="multipart/form-data"> 
             <input type="file" name="fileup">
