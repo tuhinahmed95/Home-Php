@@ -1,5 +1,4 @@
-<?php  
-// this is a data type
+<?php
 $name = "Tuhin";  //string data_type !
 echo $name;
 
