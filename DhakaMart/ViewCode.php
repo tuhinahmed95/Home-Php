@@ -249,7 +249,7 @@ if (isset($_POST['update_user'])) {
         header('Location:index.php?page=user');
         exit;
     } else {
-        echo "Error: " . mysqli_error($conn);
+        echo "Error: " . mysqli_error($conn);    
     }
 }
 
