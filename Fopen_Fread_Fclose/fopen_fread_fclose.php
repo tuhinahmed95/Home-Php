@@ -1,5 +1,5 @@
 <?php
-
+// this is fopen
 $fptr = fopen("file.txt","r");
 
 if(!$fptr){ 
