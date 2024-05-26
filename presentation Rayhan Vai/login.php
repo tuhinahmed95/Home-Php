@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<!-- this is a presentation -->
     <center> 
         <form action="#" method="post"> 
             <input type="text" name="user"><br><br>
