@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-<!-- this is a presentation -->
-    <center> 
+
+<center> 
         <form action="#" method="post"> 
             <input type="text" name="user"><br><br>
             <input type="password" name="password"><br><br>
