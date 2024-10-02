@@ -1,13 +1,16 @@
 <?php
 
-// $array = [ 3, 26, 1, 2, 3, 44, 57, 87, 1 ];
 
-function fix_arry($array){ 
-
-    $unique_arry = array_unique($array);
-    sort($unique_arry);
-
-    return $unique_arry;
+function fix_array($arr) {
+    // প্রথমে অ্যারে থেকে ডুপ্লিকেট সরিয়ে ফেলুন
+    $unique_arr = array_unique($arr);
+    
+    // তারপর অ্যারেটিকে ঊর্ধ্বক্রমে সাজান
+    sort($unique_arr);
+    
+    // সাজানো অ্যারেটি ফেরত দিন
+    return $unique_arr;
 }
 
-echo fix_arry($unique_arry);
+
+
