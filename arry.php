@@ -1,5 +1,5 @@
 <?php
-
+// practice array function
 
 function fix_array($arr) {
     
