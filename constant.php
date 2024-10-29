@@ -31,12 +31,53 @@
 //     $a++;
 // }
 
-$number = 1;
-do{ 
-    echo 'tentime.<br/>';
-    $number++;
+// $number = 1;
+// do{ 
+//     echo 'tentime.<br/>';
+//     $number++;
 
-}while($number<=10);
+// }while($number<=10);
 
+// for($x=1; $x<=100; $x=$x+10){ 
+//     for($b = $x; $b < $x +10; $b++){ 
+//         echo $b. " ";
+//     }
+//     echo "<br/>";
+// }
+
+// $x =1;
+
+// do{ 
+//     echo $x."<br/>";
+//     $x++;
+   
+// }while($x<=10)
+
+// for($x=1; $x<10;$x++){ 
+//     if($x==5){ 
+//         break;
+//     }
+//     echo $x." ";
+// }
+
+// function sum($a,$b){ 
+//     echo $a+$b;
+// }
+// sum(20,30);
+
+function sum($first,$second,$third){ 
+    $total = $first + $second + $third;
+    return $total;
+}
+
+function percentage($to){ 
+    $per = $to / 4;
+    echo $per;
+}
+
+$equeal = sum(10,40,50);
+echo $equeal."<br/>";
+
+percentage($equeal);
 
 ?>
