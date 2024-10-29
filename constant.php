@@ -65,19 +65,16 @@
 // }
 // sum(20,30);
 
-function sum($first,$second,$third){ 
-    $total = $first + $second + $third;
-    return $total;
+function addition($a,$b,$c){ 
+    $sum = $a + $b + $c;
+    return $sum ."<br/>";
 }
 
-function percentage($to){ 
-    $per = $to / 4;
-    echo $per;
+function percentage($per){ 
+    $total = $per / 5;
+    echo $total;
 }
-
-$equeal = sum(10,40,50);
-echo $equeal."<br/>";
-
-percentage($equeal);
-
+$total = addition(20,30,100);
+echo $total;
+percentage($total);
 ?>
