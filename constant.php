@@ -25,11 +25,18 @@
 //     echo "Please Enter Valid number";
 // }
 
-$a = 0;
-while($a<20){ 
-    echo "Tuhin.<br/>";
-    $a++;
-}
+// $a = 0;
+// while($a<20){ 
+//     echo "Tuhin.<br/>";
+//     $a++;
+// }
+
+$number = 1;
+do{ 
+    echo 'tentime.<br/>';
+    $number++;
+
+}while($number<=10);
 
 
 ?>
