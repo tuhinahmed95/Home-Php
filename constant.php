@@ -67,14 +67,15 @@
 
 function addition($a,$b,$c){ 
     $sum = $a + $b + $c;
-    return $sum ."<br/>";
+    $total = $sum/5;
+    return $total ."<br/>";
 }
 
-function percentage($per){ 
-    $total = $per / 5;
-    echo $total;
-}
+// function percentage($per){ 
+//     $total = $per * 5;
+//     echo $total;
+// }
 $total = addition(20,30,100);
 echo $total;
-percentage($total);
+// percentage($total);
 ?>

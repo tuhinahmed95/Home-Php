@@ -7,7 +7,7 @@ if(isset($_POST['btnSubmit'])){
 	$contact = $_POST['contact'];
 	$db->query(" call pro_manufacturer('$mname','$address',$contact') ");
 }
-
+//practice
 
 if(isset($_POST['addProduct'])){
 	$pname = $_POST['pname'];
