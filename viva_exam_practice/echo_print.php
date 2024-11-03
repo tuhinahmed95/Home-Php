@@ -80,8 +80,43 @@
 // echo $x;
 // // echo $y;
 
-function display(){ 
-    $y = 10;
-    echo $y;
+// function display(){ 
+//     $y = 10;
+//     echo $y;
+// }
+// display();
+
+// $number = array(30,40,50,80);
+// echo $number[3];
+
+// $colours = array('red','green','yello',20,'pink',11.30,'powderblue');
+
+// // // echo $colours[0]."<br/>";
+// // // echo $colours[1]."<br/>";
+// // // echo $colours[2]."<br/>";
+// // // echo $colours[3]."<br/>";
+// // // echo $colours[4]."<br/>";
+// // // echo $colours[5]."<br/>";
+// // // echo $colours[6]."<br/>";
+// // echo "<pre>";
+// // print_r($colours);
+// // echo "</pre>";
+
+// $color = ['red','green','yello',30,'blue','skyblue'];
+
+// echo "<ul>";
+
+// for($x = 0; $x<=5; $x++){ 
+//     echo "<li> $color[$x]</li>";
+// }
+
+// echo "</ul>";
+
+$color[0]='tuhin';
+$color[1]='jakir';
+$color[2]='mamun';
+$color[3]='shahin';
+
+for($x=0;$x<=3; $x++){ 
+    echo $color[$x]."<br/>";
 }
-display();
