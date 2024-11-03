@@ -56,8 +56,15 @@
 // }
 // worldvar();
 
-define('test', 50,true);
-// echo (string)test;
-// $sum = test + 50;
-// echo $sum;
-echo Test;
+// define('test', 50,true);
+// // echo (string)test;
+// // $sum = test + 50;
+// // echo $sum;
+// echo Test;
+
+// define("rafia","tuhin",true);
+// echo rafia;
+
+$names = "tuhin";
+$int = (string)$names;
+echo $int;
