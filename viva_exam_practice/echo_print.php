@@ -30,6 +30,22 @@
 // $array = (array)$name;
 // print_r ($array);
 
-$names = ['name'=>'tuhin','age'=>30];
-$object = (object)$names;
-echo $object;
+// $names = ['name'=>'tuhin','age'=>30];
+// // $object = (object)$names;
+// echo $names;
+
+// function myfunction(){ 
+//     $loacl = "local variable";
+//     echo $loacl;
+// }
+
+// myfunction();
+
+$golabal = "this is global variables";
+
+function globalfunction(){ 
+    global $golabal;
+    echo $golabal;
+}
+
+globalfunction();
