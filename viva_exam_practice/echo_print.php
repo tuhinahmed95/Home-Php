@@ -50,8 +50,14 @@
 
 // globalfunction();
 
-$golabalvar = "i am gloabal variables";
-function worldvar(){ 
-   echo $GLOBALS ['golabalvar'];
-}
-worldvar();
+// $golabalvar = "i am gloabal variables";
+// function worldvar(){ 
+//    echo $GLOBALS ['golabalvar'];
+// }
+// worldvar();
+
+define('test', 50,true);
+// echo (string)test;
+// $sum = test + 50;
+// echo $sum;
+echo Test;
