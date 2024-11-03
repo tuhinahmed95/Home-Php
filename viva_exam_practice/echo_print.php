@@ -149,19 +149,37 @@
 
 //multidimontion array
 
-$employ = [
-    [1,'Tuhin','senior developer',70000],
-    [2,'rafia','juniour developer',33000],
-    [3,'jakir','fresher developer',7000],
-    [4,'tasrif','mid developer',7090],
-];
-echo "<table>"; 
-echo "<tr>";
-for($row = 0; $row < 4; $row ++) {
-    for($col = 0; $col < 4 ; $col ++){ 
-        echo $employ[$row][$col] ."<br/>";
-    }
-}
-echo "</tr>";
+// $employ = [
+//     [1,'Tuhin','senior developer',70000],
+//     [2,'rafia','juniour developer',33000],
+//     [3,'jakir','fresher developer',7000],
+//     [4,'tasrif','mid developer',7090],
+// ];
 
-echo "</table>";
+// echo "<table border='2px' cellpadding='5px'cellspacing='0'> ";  
+// foreach($employ as $v1){ 
+//     echo "<tr>"; 
+//     foreach($v1 as $v2){ 
+//         echo "<td>$v2</td>";
+//     }
+//     echo "<tr/>";
+// }
+
+// echo "</table>";
+
+// $emp = [
+//     [1,'Tuhin','Senior Developer',90000],
+//     [2,'Tasrif','Automobile Enginier',38000],
+//     [3,'Shabbir','Teacher',9000],
+//     [4,'Toukir','Police Office',22000],
+//     [5,'Emra','enginier',67000],
+// ];
+
+// echo" <table> ";
+
+// for($row = 0; $row<4; $row++){ 
+//     for($col=0; $col<4; $col++){ 
+//         echo $emp[$row][$col]."<br/>";
+//     } 
+// }
+// echo "</table>";
