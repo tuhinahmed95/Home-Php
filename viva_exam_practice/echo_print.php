@@ -183,3 +183,61 @@
 //     } 
 // }
 // echo "</table>";
+
+// $names = [
+//     [1,'Tuhin','Developer',39000],
+//     [1,'Ripn','Teacher',22000],
+//     [1,'Mamun','Doctor',30000],
+//     [1,'Rafia','Junior Enginier',25000],
+// ];
+
+// echo "<table border='2px' cellpadding='5'cellspacing='0'> ";
+
+// foreach($names as $data){ 
+//   echo "<tr>";  
+//   foreach($data as $value){ 
+//         echo "<td>$value <td/>";
+//     }
+//     echo "</tr>";
+// }
+
+// echo "</table>";
+
+// $names = array('tuhin','tanvir','tomal','tasrif');
+// for($x = 0; $x<4; $x++){ 
+//     echo $names[$x];
+// }
+
+// $color = array('first'=>'red','second'=>'green','third'=>'yello','four'=>'blue','five'=>'skyblue');
+
+// // for($x = 0; $x < 5; $x++){ 
+// //     echo $color[$x];
+// // }
+
+// echo "<pre>";
+// var_dump($color);
+// echo "<pre/>";
+
+$marks = [
+    "Tuhin"=>['physics'=>80,'chemistry'=>89,'math'=>96],
+    "Rafia"=>['physics'=>78,'chemistry'=>78,'math'=>90],
+    "Salman"=>['physics'=>87,'chemistry'=>67,'math'=>78],
+];
+echo "<table border='2px' cellpadding='5px' cellspacing='0'>";
+foreach($marks as $key => $value1){ 
+    echo "<tr>";
+    echo "<td>$key</td>";
+    foreach($value1 as $value2){ 
+        echo "<td>$value2</td>";
+    }
+    echo "<tr/>";
+}
+echo "<table/>";
+
+
+// echo "<pre>";
+// // var_dump($marks);
+// print_r( $marks);
+// echo "<pre/>";
+
+
