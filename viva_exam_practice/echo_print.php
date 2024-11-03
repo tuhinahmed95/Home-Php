@@ -112,11 +112,56 @@
 
 // echo "</ul>";
 
-$color[0]='tuhin';
-$color[1]='jakir';
-$color[2]='mamun';
-$color[3]='shahin';
+// $color[0]='tuhin';
+// $color[1]='jakir';
+// $color[2]='mamun';
+// $color[3]='shahin';
 
-for($x=0;$x<=3; $x++){ 
-    echo $color[$x]."<br/>";
+// for($x=0;$x<=3; $x++){ 
+//     echo $color[$x]."<br/>";
+// }
+
+// $names = array(
+//     "name1" => 40,
+//     "name2" => 40,
+//     "name3" => 40,
+// );
+// echo "<pre>";
+// var_dump($names) ;
+// echo "<pre/>";
+
+// echo $names["name1"]
+
+
+// $num = [10,30,38];
+// foreach($num as $value){ 
+//     echo "$value<br/>";
+// }
+
+// $age = [
+//     "Steve"=>30,
+//     "Tuhin"=>29,
+//     "Rafia"=>31,
+// ];
+// foreach($age as $key=>$value){ 
+//     echo $key. " = ". $value . "<br/>";
+// }
+
+//multidimontion array
+
+$employ = [
+    [1,'Tuhin','senior developer',70000],
+    [2,'rafia','juniour developer',33000],
+    [3,'jakir','fresher developer',7000],
+    [4,'tasrif','mid developer',7090],
+];
+echo "<table>"; 
+echo "<tr>";
+for($row = 0; $row < 4; $row ++) {
+    for($col = 0; $col < 4 ; $col ++){ 
+        echo $employ[$row][$col] ."<br/>";
+    }
 }
+echo "</tr>";
+
+echo "</table>";
