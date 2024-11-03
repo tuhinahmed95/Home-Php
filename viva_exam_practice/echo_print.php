@@ -41,11 +41,17 @@
 
 // myfunction();
 
-$golabal = "this is global variables";
+// $golabal = "this is global variables";
 
-function globalfunction(){ 
-    global $golabal;
-    echo $golabal;
+// function globalfunction(){ 
+//     global $golabal;
+//     echo $golabal;
+// }
+
+// globalfunction();
+
+$golabalvar = "i am gloabal variables";
+function worldvar(){ 
+   echo $GLOBALS ['golabalvar'];
 }
-
-globalfunction();
+worldvar();
