@@ -1,10 +1,12 @@
 <?php
-echo "<prev>";
+// echo "<prev>";
 
-    print_r($_POST);
-echo "</prev>";
+//     print_r($_SERVER);
+// echo "</prev>";
 
-echo $_POST['fname'];
-echo $_POST['age'];
+// echo $_POST['fname'];
+// echo $_POST['age'];
+
+// require "testform.php";
 
 ?>

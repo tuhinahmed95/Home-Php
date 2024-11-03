@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="getdata.php" method="post">
-      name :  <input type="text" name="fname"><br>
-      age  : <input type="number" name="age"><br>
+      Name :  <input type="text" name="fname"><br><br>
+      Age  : <input type="number" name="age"><br><br>
       <input type="submit" value="save">
     </form>
 </body>

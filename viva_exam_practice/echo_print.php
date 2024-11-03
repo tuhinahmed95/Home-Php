@@ -65,6 +65,23 @@
 // define("rafia","tuhin",true);
 // echo rafia;
 
-$names = "tuhin";
-$int = (string)$names;
-echo $int;
+// $names = "tuhin";
+// $int = (string)$names;
+// echo $int;
+
+// $x = 10;
+
+// function display(){ 
+//     global $x;
+//     echo "$x  <br/>";
+//     $y = 16;
+// }
+// display();
+// echo $x;
+// // echo $y;
+
+function display(){ 
+    $y = 10;
+    echo $y;
+}
+display();
