@@ -17,7 +17,7 @@
 <body>
     <?php
         if(isset($_SESSION['faccol'])){ 
-            echo "session is set now";
+            echo "session is set now".$_SESSION['favcol'];
         }else{ 
             echo "session is not set";
         }

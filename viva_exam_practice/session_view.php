@@ -14,7 +14,7 @@ session_start();
     <?php 
 
     if(isset($_SESSION['favcol'])){ 
-        echo "session is view now";
+        echo "session is view now".$_SESSION['favcol'];
     }else{ 
         echo "session is not set";
     }
