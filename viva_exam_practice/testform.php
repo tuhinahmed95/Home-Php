@@ -6,10 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="getdata.php" method="post">
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
       Name :  <input type="text" name="fname"><br><br>
       Age  : <input type="number" name="age"><br><br>
-      <input type="submit" value="save">
+      <input type="submit" name="save">
     </form>
 </body>
 </html>
+
+<?php
+
+if(isset($_POST['save'])){ 
+  echo $_POST['fname']."<br>";
+  echo $_POST['age'];
+}
+
+?>

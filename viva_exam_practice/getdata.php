@@ -9,4 +9,6 @@
 
 // require "testform.php";
 
+echo "get cokie in first page :". $_COOKIE['user'];
+
 ?>
