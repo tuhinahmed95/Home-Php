@@ -247,11 +247,11 @@
 
 // echo count($number);
 
-$fruits = ['apple','banana','orange'];
-array_unshift($fruits,'pineapple');
+// $fruits = ['apple','banana','orange'];
+// array_unshift($fruits,'pineapple');
 
-echo "<pre>";
-print_r($fruits);
-echo "</pre>";
+// echo "<pre>";
+// print_r($fruits);
+// echo "</pre>";
 
 
