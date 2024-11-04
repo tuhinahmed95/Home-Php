@@ -1,0 +1,70 @@
+1.What is the difference between echo and print?
+Answer: echo: Can outputs multiple values and is faster.
+print: Outputs a single value and always returns 1.
+
+2.What is the difference between cookies and sessions?
+Answer: Cookies: Stored in the user's browser and have a specific expiration time.
+Sessions: Stored on the server and expire when the user's session ends.
+
+3.How many errors are there in PHP?
+Answer:
+
+1.Notice error
+2.Warning error
+3.Fatal error
+4.Parse error
+
+4.How can we declare variables in PHP?
+Answer: Variables in PHP start with $.
+Example: $name = "Tuhin";
+
+5.What is the difference between include and require?
+Answer:
+Include: Gives a warning if the file is missing but continues script execution.
+Require: Causes a fatal error if the file is missing, stopping script execution.
+
+6.How can we create constants in PHP?
+Answer: Creating constants in PHP: Use the define() function.
+Example: define('NAME', 'Tuhin');
+
+7.How many data types are there in PHP?
+Answer: The main data types in PHP are:
+
+	String
+	Integer
+	Float
+	Boolean
+	Array
+	Object
+	Null
+	Resource
+
+9. What are the differences between GET and POST methods?
+Answer:
+POST: Sends data via the HTTP POST method and it does not show data in the URL. 
+GET: Sends data via the HTTP GET method and it show data in the URL.
+
+10. How many types of arrays are there in PHP?
+Answer: PHP arrays have three types:
+Indexed Array: An array with numeric indexes.
+Associative Array: An array with named keys (strings) as indexes.
+Multidimensional Array: An array that contains one or more arrays, allowing for complex data structures.
+
+10.What are the different types of loops in PHP?
+Answer: The main types of loops in PHP are:
+for loop
+while loop
+do-while loop
+foreach loop (specifically for arrays)
+
+11.Explain the explode() and implode() functions.
+Ans : explode(); converts a string to an array.
+      implode(); converts an array to a string.
+
+19. Explain the use of the die() and exit() functions in PHP.
+Ans : Both die() and exit() perform the same function in PHP they are both stop scitp .
+
+13.what is the difference between pdo and mysqli?
+Ans : Difference between PDO and MySQLi:
+     PDO : supports multiple database .
+     MYSQLI : only supports mysql database.
