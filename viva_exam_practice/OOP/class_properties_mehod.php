@@ -45,5 +45,8 @@ class man {
 
 $object = new man('Tuhin',30,'Dhaka');
 echo $object->info();
+echo "<br>";
+$des = new man('habib',45,'bogura');
+echo $des->info();
 
 ?>
