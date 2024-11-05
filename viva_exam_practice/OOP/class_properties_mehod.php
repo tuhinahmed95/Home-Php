@@ -33,6 +33,11 @@ class man {
         $this->address = $fadd;
     }
 
+    function __destruct()
+    {
+        echo $this->name. $this->age;
+    }
+
     function info(){ 
         return "Fname :".$this->name. "Fage :". $this->age. "Address : ".$this->address;
     }
