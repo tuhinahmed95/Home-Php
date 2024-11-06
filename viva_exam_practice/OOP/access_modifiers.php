@@ -3,14 +3,14 @@
 class Man { 
     public $name = "tuhin";
     protected $age = 30;
-    private $address = "tuhin";
+    private $address = "Dhaka";
 
     private function accessAll(){ 
         return $this->age.$this->address;
     }
 
     public function callFunction(){ 
-        $this->accessAll();
+       return $this->accessAll();
     }
 
     
@@ -19,6 +19,7 @@ class Man {
 }
 
 $object = new Man();
+echo $object->name;
 echo $object->callFunction();
 
 
