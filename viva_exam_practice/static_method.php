@@ -11,4 +11,10 @@ class User{
     }
 }
 
-echo User::UserAge();
+class Post { 
+    public static function postCreate(){ 
+        return "This is Child Class" . User::UserAge();
+    }
+}
+
+echo Post::postCreate();
