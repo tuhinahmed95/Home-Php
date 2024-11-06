@@ -15,6 +15,10 @@ class Car {
         echo "Diesel";
     }
 
+    final function noWhile() {
+        echo 4;
+    }
+
     public function details (){ 
         echo $this->name.'<br/>';
         echo $this->model . '<br/>';
@@ -39,12 +43,24 @@ class tesla  extends Car{
   {
     echo 'Elictric';
   }
+
+  public function __destruct()
+  {
+    echo "outside in class";
+  }
+
+//   public function noWhile()
+//   {
+//     echo 8;
+//   }
 }
 
 $object = new tesla('BMW','BMW_X','RED','Tuhin');
 echo $object->details();
 echo "<br/>";
-echo $object->powerdBy();
+echo $object->noWhile();
+echo "<br/>";
+
 
 
 
