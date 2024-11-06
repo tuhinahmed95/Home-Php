@@ -27,20 +27,24 @@ class Car {
 class tesla  extends Car{ 
     public $owner;
 
-    public function TeslaO(){ 
-        public function __construct($name,$model,$colour,$owner)
+    public function __construct($name,$model,$colour,$owner)
     {
         $this->name = $name;
         $this->model = $model;
-        $this->colour = $colour;
+        // $this->colour = $colour;
         $this->owner = $owner;
     }
-    }
+
+  public function powerdBy()
+  {
+    echo 'Elictric';
+  }
 }
 
 $object = new tesla('BMW','BMW_X','RED','Tuhin');
-echo $object->powerdBy();
+echo $object->details();
 echo "<br/>";
+echo $object->powerdBy();
 
 
 
