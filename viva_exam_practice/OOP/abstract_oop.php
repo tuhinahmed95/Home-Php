@@ -13,6 +13,15 @@ class Bmw  extends Car{
     }
 }
 
+class User { 
+    public function Nehal (){ 
+        echo "Hey This is nehal";
+    }
+}
+
+$nejal = User();
+echo $nejal;
+
 $abs = new Bmw();
 echo $abs->carPrice(200,'red','bmw-x');
 
