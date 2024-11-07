@@ -1,6 +1,6 @@
 <?php
 
-include ('namespaces\blog/database_connect.php');
+include ('namespaces\blog\database_connect.php');
 use namespaces\blog\database_connect\{
     Database,
     
@@ -12,7 +12,7 @@ class Post {
        echo "this Is Post "; 
     }
 }
-new Post();
+// new Post();
 new Database();
 
 
