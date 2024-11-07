@@ -19,7 +19,7 @@ class User {
     }
 }
 
-$nejal = User();
+$nejal = new User();
 echo $nejal;
 
 $abs = new Bmw();
