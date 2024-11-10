@@ -13,4 +13,8 @@
 4. for joinnig data into two tabels : Select colnaem ,colname, colname from table1  join table2 on table1 id = table2 id;
 
 5.for rename table syntax : rename table oldtabname to newtabname;
+
+6. for limit use syntax : select * from students_details limit 5;
+
+7. for asending and desending syntax : select * from student_details order by name;
    
