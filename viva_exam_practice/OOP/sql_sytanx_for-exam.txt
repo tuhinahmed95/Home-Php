@@ -11,4 +11,6 @@
 3. for updating data in the table : Update users name = "Rafia Kabir Khan Tuly" where id = 1;
 
 4. for joinnig data into two tabels : Select colnaem ,colname, colname from table1  join table2 on table1 id = table2 id;
+
+5.for rename table syntax : rename table oldtabname to newtabname;
    
