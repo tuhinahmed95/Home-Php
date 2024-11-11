@@ -27,4 +27,8 @@
 11. for change column name syntax : alter table table name change oldcolname new_col_name;
 
 12. for delte column name sytax : alter table table name drop col_name;
+
+13. select sum(sarlary) from teacher where
    
+14.for table joining sytax : select std.id,std.name,exm.gpa,exam.dept
+   from student as std join exam as exm on std.id = exm.id;
