@@ -1,0 +1,48 @@
+1.What is Laravel?
+Laravel is a free, open-source PHP web framework used for web application development, following the Model-View-Controller (MVC) pattern. It provides tools and resources to build robust web applications quickly and efficiently.
+
+2.What is MVC in Laravel?
+MVC stands for Model-View-Controller. In Laravel, the Model represents the data, the View displays data to the user, and the Controller handles the application's logic and processes user requests.
+
+3.What are Service Providers in Laravel?
+Service Providers are the central place for configuring your application. Almost all the services in a Laravel application are bootstrapped and managed through service providers.
+
+4.What is Eloquent ORM?
+Eloquent ORM is Laravel's Object-Relational Mapper, which provides an easy and fluent way to interact with the database. It allows you to work with database records using PHP syntax instead of raw SQL.
+
+5.How does routing work in Laravel?
+Laravel’s routing allows defining routes for handling user requests. Routes are typically defined in the routes/web.php file and use methods like get, post, put, delete to match specific HTTP requests to controller actions.
+
+6.What are Middleware in Laravel?
+Middleware are filters that intercept HTTP requests entering or leaving your application. They provide a mechanism for filtering or modifying requests. Common examples are authentication, logging, and CORS handling.
+
+7.How do you create a Controller in Laravel?
+You can create a controller by running php artisan make:controller ControllerName in the terminal. This command creates a new file in the app/Http/Controllers directory.
+
+8.What is Blade templating in Laravel?
+Blade is Laravel’s powerful templating engine, allowing you to write PHP in your HTML views with ease. Blade provides features like template inheritance, conditional statements, loops, and other helpful utilities for view rendering.
+
+9.How does the php artisan command work?
+php artisan is Laravel’s command-line interface, used to perform tasks such as creating controllers, managing migrations, and clearing caches. It’s a powerful tool for handling various development and maintenance tasks.
+
+10.What are Migrations in Laravel?
+Migrations are version control for your database, allowing you to define and modify database schema through PHP code instead of SQL. They are helpful for synchronizing database changes across team members.
+
+11.What is CSRF protection in Laravel?
+Cross-Site Request Forgery (CSRF) protection is a security measure to prevent unauthorized commands from being transmitted by users. Laravel automatically generates a CSRF token for each active user session, which is used to verify requests.
+
+12.How do you define Relationships in Eloquent?
+Laravel Eloquent supports several types of relationships such as:
+one-to-one: hasOne, belongsTo
+one-to-many: hasMany, belongsTo
+many-to-many: belongsToMany
+polymorphic relationships
+
+13.What is the purpose of artisan tinker?
+artisan tinker is a REPL (Read-Eval-Print Loop) tool for Laravel that allows you to interact with your application directly. It’s useful for testing Eloquent models and other application components.
+
+14.What is Dependency Injection in Laravel?
+Dependency Injection is a design pattern in Laravel where dependencies (objects or services) are automatically injected into your classes by the Laravel Service Container, allowing for easier testing and code maintenance.
+
+15.How can you optimize Laravel’s performance?
+Some ways include caching (view, route, config), optimizing assets, using eager loading, optimizing database queries, and minimizing HTTP requests.
