@@ -1,0 +1,44 @@
+ 1. What is JavaScript?
+Ans : JavaScript is a high-level, dynamic, and interpreted programming language commonly used for creating interactive effects within web browsers.
+
+2. Explain var, let, and const.
+Ans : var: Declares a variable with function scope; it can be redeclared and updated.
+      let: Declares a block-scoped variable; it can be updated but not redeclared within the same scope.
+      const: Declares a block-scoped constant; it cannot be updated or redeclared.
+
+3. What are JavaScript data types?
+	JavaScript has several data types: String, Number, Boolean, Object, Undefined, Null, Symbol, and BigInt.
+
+4. Explain == vs. ===.
+Ans : == checks for equality of value but allows type coercion.
+      === checks for both value and type equality, without type coercion.
+
+5. What is NaN in JavaScript?
+Ans : NaN stands for "Not-a-Number." It is a value that represents a computational error or an invalid number.
+
+6. What is this keyword in JavaScript?
+Ans : this refers to the context in which the current code is being executed, which can vary depending on how the function is called.
+
+7. What is the difference between null and undefined?
+Ans : undefined means a variable has been declared but not assigned a value.
+      null is an assignment value that represents "no value" or "empty."
+
+8. What are Arrow Functions?
+Ans : Arrow functions are a shorthand syntax for writing functions (() => {}), and they do not have their own this binding.
+
+9. What is the map function in JavaScript?
+Ans : map creates a new array populated with the results of calling a provided function on every element in the original array.
+
+10. Explain call(), apply(), and bind() methods.
+Ans : call(): Invokes a function with a specified this and arguments provided individually.
+     apply(): Similar to call(), but accepts arguments as an array.
+      bind(): Creates a new function with a specified this context and pre-defined arguments.
+
+11. What is the difference between synchronous and asynchronous code?
+Ans : Synchronous code is executed line by line, blocking further execution until the current task completes.
+      Asynchronous code allows tasks to run in the background, freeing up the program to execute other tasks.
+
+12. What is JSON?
+Ans : JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy to read and write for humans and machines.
+
+
