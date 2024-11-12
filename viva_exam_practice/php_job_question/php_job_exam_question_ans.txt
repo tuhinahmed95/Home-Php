@@ -1,0 +1,126 @@
+1.What is the difference between echo and print?
+Answer: echo: Can outputs multiple values and is faster.
+        print: Outputs a single value and always returns 1.
+
+2.What is the difference between cookies and sessions?
+Answer: Cookies: Stored in the user's browser and have a specific expiration time.
+        Sessions: Stored on the server and expire when the user's session ends.
+
+3.How many errors are there in PHP?
+Answer:
+
+    1.Notice error
+    2.Warning error
+    3.Fatal error
+    4.Parse error
+
+4.How can we declare variables in PHP?
+Answer: Variables in PHP start with $.
+Example: $name = "Tuhin";
+
+5.What is the difference between include and require?
+Answer: Include: Gives a warning if the file is missing but continues script execution.
+        Require: Causes a fatal error if the file is missing, stopping script execution.
+
+6.How can we create constants in PHP?
+Answer: Creating constants in PHP: Use the define() function.
+Example: define('NAME', 'Tuhin');
+
+7.How many data types are there in PHP?
+Answer: The main data types in PHP are:
+
+	String
+	Integer
+	Float
+	Boolean
+	Array
+	Object
+	Null
+	Resource
+
+9. What are the differences between GET and POST methods?
+Answer:
+POST: Sends data via the HTTP POST method and it does not show data in the URL. 
+GET:  Sends data via the HTTP GET method and it show data in the URL.
+
+10. How many types of arrays are there in PHP?
+Answer: PHP arrays have three types:
+      Indexed Array: An array with numeric indexes.
+      Associative Array: An array with named keys (strings) as indexes.
+      Multidimensional Array: An array that contains one or more arrays, allowing for complex data structures.
+
+10.What are the different types of loops in PHP?
+Answer: The main types of loops in PHP are:
+       for loop
+       while loop
+       do-while loop
+       foreach loop (specifically for arrays)
+
+11.Explain the explode() and implode() functions.
+Ans : explode(); converts a string to an array.
+      implode(); converts an array to a string.
+
+12. Explain the use of the die() and exit() functions in PHP.
+Ans : Both die() and exit() perform the same function in PHP they are both stop script .
+
+13.what is the difference between pdo and mysqli?
+Ans : Difference between PDO and MySQLi:
+     PDO : supports multiple database .
+  MYSQLI : only supports mysql database.
+
+14. What is the purpose of isset() and empty()?
+Ans : isset(): Checks if a variable is set and not NULL.
+      empty(): Checks if a variable is empty (e.g., NULL, 0, false, "").
+
+15. What is an array in PHP?
+Ans : An array is a data structure in PHP used to store multiple values in a single variable. Types of arrays include indexed, associative, and                   multidimensional arrays.
+
+16. What is an Abstract Class in PHP?
+Ans : An abstract class in PHP cannot be instantiated and is intended to be subclassed. It can contain both abstract methods (without implementations) and         concrete methods
+
+17. What is namespace in PHP?
+Ans : A namespace in PHP is a way to encapsulate and organize code, preventing name conflicts by grouping classes, functions, and constants under a defined       name.
+
+18. What is an interface in PHP?
+Ans : An interface defines a contract for classes without implementing the methods. Classes implementing the interface must define all the interface             methods.
+
+19. What are Traits in PHP?
+   Traits allow code reuse in PHP where multiple inheritance is needed. They allow you to use methods across multiple classes without traditional          inheritance.
+
+19. Explain error handling in PHP.
+Ans : PHP provides functions like error_reporting(), set_error_handler(), and try-catch blocks for custom error handling, allowing you to control how errors       are displayed and logged.
+
+20. What is MVC in PHP?
+Ans : MVC (Model-View-Controller) is a design pattern that separates an application into three components: Model (data handling), View (user interface), and       Controller (business logic).
+
+
+21. What is Composer, and why is it used in PHP projects?
+Answer: Composer is a dependency management tool for PHP. It simplifies managing libraries and packages in projects,automatically handling installation and         updates.
+
+22. What are the main differences between == and === in PHP?
+Answer: == (Equality): Checks if the values are equal, regardless of type
+        === (Identity): Checks if the values and types are both identical.
+
+
+23. what is difference between while loop and do-while loop?
+Ans : In a while loop, the condition is checked before the loop executes, so the loop may never run if the condition is false initially.
+      In a do...while loop, the condition is checked after the loop executes, ensuring that the loop runs at least once regardless of the initial condition.
+
+
+24.mysql built-in function.
+Answer : 1.count(), 2.sum(), 3.avg(), 4. max(), 5.min(), 6.now(), 7.DATEDIFF().
+
+25. How can you send an email using PHP?
+ Ans : Use the mail() function to send basic emails. For more advanced functionality, you can use libraries like PHPMailer.
+
+27. What is the purpose of the use keyword in PHP?
+Ans : It imports a namespace or alias in a PHP file, making code easier to manage when using namespaces.
+
+28. Explain the concept of OOP in PHP.
+Ans : PHP supports Object-Oriented Programming, allowing you to use classes, objects, inheritance, polymorphism, and encapsulation to structure code.
+
+29. How can you connect to a MySQL database in PHP?
+    Using mysqli_connect() for MySQLi or PDO (PHP Data Objects) for a more secure, object-oriented approach.
+
+30. What are Superglobals in PHP?
+Ans : Built-in global arrays like $_GET, $_POST, $_SESSION, $_COOKIE, $_FILES, $_REQUEST, and $_SERVER that are accessible anywhere in the script.
