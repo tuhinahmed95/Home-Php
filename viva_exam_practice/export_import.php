@@ -2,6 +2,11 @@
 
 $array = 'tuhin ahmed md';
 
-echo  implode(" ", $array);
+print_r explode(" ", $array);
+
+echo "<br/>";
+
+$str = ['green','orrange','red'];
+echo implode(' ', $str);
 
 ?>
