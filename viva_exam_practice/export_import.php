@@ -2,8 +2,8 @@
 
 $array = 'tuhin ahmed md';
 
-print_r explode(" ", $array);
-
+$y = explode(" ", $array);
+print_r($y);
 echo "<br/>";
 
 $str = ['green','orrange','red'];
