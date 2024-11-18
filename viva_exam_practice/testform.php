@@ -9,6 +9,7 @@
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
       Name :  <input type="text" name="fname"><br><br>
       Age  : <input type="number" name="age"><br><br>
+      Email  : <input type="email" name="email"><br><br>
       <input type="submit" name="save">
     </form>
 </body>
