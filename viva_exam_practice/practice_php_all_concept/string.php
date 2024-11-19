@@ -29,11 +29,32 @@ echo (max($max))."<br/>";
 echo (min($max))."<br/>";
 echo (pi());*/
 
-// $num = (-4.-6);
+// $num = (-4);
 // echo (abs($num));
 
-$squ = 64;
-echo (sqrt($squ));
+// $squ = 64;
+// echo (sqrt($squ));
+
+// $round = 4.30;
+// echo (round($round));
+
+// echo (rand(5,20));
+
+echo __DIR__; 
+echo "<br/>";
+echo __FILE__;
+echo "<br/>";
+echo __LINE__;
+echo "<br/>";
+echo __FUNCTION__;
+echo "<br/>";
+echo __CLASS__;
+echo "<br/>";
+echo __METHOD__;
+echo "<br/>";
+echo __NAMESPACE__;
+echo "<br/>";
+echo __TRAIT__;
 
 
 ?>
