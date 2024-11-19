@@ -16,8 +16,13 @@
 
 // echo trim($string);
 
-$string = "tuhin ahme \"tomal\" tarek .";
-echo $string;
+// $string = "tuhin ahme \"tomal\" tarek .";
+// echo $string;
+
+$string = 'tuhin ahmed';
+$number = '34';
+$x = (int)$string;
+var_dump($x);
 
 
 ?>
