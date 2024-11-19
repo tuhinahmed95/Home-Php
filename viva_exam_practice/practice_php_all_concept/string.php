@@ -1,5 +1,5 @@
 <?php
-$string = 'Tuhin Ahmed';
+// $string = 'Tuhin Ahmed';
 
 // echo strtolower($string);
 // echo strtoupper($string);
@@ -14,7 +14,10 @@ $string = 'Tuhin Ahmed';
 // $string = implode(' ', $array);
 // echo $string;
 
-echo trim($string);
+// echo trim($string);
+
+$string = "tuhin ahme \"tomal\" tarek .";
+echo $string;
 
 
 ?>
