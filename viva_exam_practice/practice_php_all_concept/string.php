@@ -24,9 +24,16 @@
 // $x = (int)$string;
 // var_dump($x);
 
-$max = [2,5,7,40];
+/*$max = [2,5,7,40];
 echo (max($max))."<br/>";
-echo (min($max));
+echo (min($max))."<br/>";
+echo (pi());*/
+
+// $num = (-4.-6);
+// echo (abs($num));
+
+$squ = 64;
+echo (sqrt($squ));
 
 
 ?>
