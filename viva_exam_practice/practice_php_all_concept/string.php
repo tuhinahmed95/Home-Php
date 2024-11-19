@@ -19,10 +19,14 @@
 // $string = "tuhin ahme \"tomal\" tarek .";
 // echo $string;
 
-$string = 'tuhin ahmed';
-$number = '34';
-$x = (int)$string;
-var_dump($x);
+// $string = 'tuhin ahmed';
+// $number = '34';
+// $x = (int)$string;
+// var_dump($x);
+
+$max = [2,5,7,40];
+echo (max($max))."<br/>";
+echo (min($max));
 
 
 ?>
