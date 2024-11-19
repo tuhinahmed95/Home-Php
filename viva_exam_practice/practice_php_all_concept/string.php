@@ -55,6 +55,14 @@ echo "<br/>";
 echo __NAMESPACE__;
 echo "<br/>";
 echo __TRAIT__;
+echo "<br/>";
+
+$x = "18";
+if($x === 18){ 
+    echo "this is a correct code";
+}else{ 
+    echo "is not a correct code";
+}
 
 
 ?>
