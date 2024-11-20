@@ -39,10 +39,20 @@
 
 // } while($i<45);
 
-$i = 0;
-for($i=0; $i<10; $i++){ 
-    if($i == 4)continue;
-    echo $i;
-}
+// $i = 0;
+// for($i=0; $i<10; $i++){ 
+//     if($i == 4)continue;
+//     echo $i;
+// }
 
+// $arrays = ['red','green','blue','yello'];
+// foreach($arrays as $array){ 
+//     echo $array ." ";
+// }
+
+$arrays = ['name'=>'tuhin','age'=>34,'profession'=>"Senior Developer"];
+
+foreach($arrays as $key => $value){ 
+    echo " $key : $value"."<br/>";
+}
 ?>
