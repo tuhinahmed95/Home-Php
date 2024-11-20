@@ -30,12 +30,19 @@
 //     echo $x. " ";
 // }
 
-$i = 9;
-do{ 
-    echo $i." ";
-    $i++;
-if($i ==12) continue;
+// $i = 9;
+// do{ 
+//  if($i ==12) continue;
 
-} while($i<45);
+//     echo $i." ";
+//     $i++;
+
+// } while($i<45);
+
+$i = 0;
+for($i=0; $i<10; $i++){ 
+    if($i == 4)continue;
+    echo $i;
+}
 
 ?>
