@@ -2,8 +2,16 @@
 
 $numbers = [23,45,67,78,89];
 
-foreach($numbers as $number){ 
-    echo $number;
+// foreach($numbers as $number){ 
+//     echo $number;
+// }
+
+function myfunction (){ 
+    foreach($numbers as $number){ 
+        echo $number;
+    }
 }
+
+myfunction();
 
 ?>
