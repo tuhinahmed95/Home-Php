@@ -50,9 +50,23 @@
 //     echo $array ." ";
 // }
 
-$arrays = ['name'=>'tuhin','age'=>34,'profession'=>"Senior Developer"];
+// $arrays = ['name'=>'tuhin','age'=>34,'profession'=>"Senior Developer"];
 
-foreach($arrays as $key => $value){ 
-    echo " $key : $value"."<br/>";
+// foreach($arrays as $key => $value){ 
+//     echo " $key : $value"."<br/>";
+// }
+
+class Car { 
+    public $model;
+    public $color;
+    public function __construct($model,$color)
+    {
+        $this->model=$model;
+        $this->color=$color;
+    }
+}
+$myCar = new Car('BMW',"Black");
+foreach($myCar as $x => $y){ 
+    echo "$x : $y"."<br/>";
 }
 ?>
