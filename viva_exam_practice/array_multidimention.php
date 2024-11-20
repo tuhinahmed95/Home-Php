@@ -56,17 +56,26 @@
 //     echo " $key : $value"."<br/>";
 // }
 
-class Car { 
-    public $model;
-    public $color;
-    public function __construct($model,$color)
-    {
-        $this->model=$model;
-        $this->color=$color;
+// class Car { 
+//     public $model;
+//     public $color;
+//     public function __construct($model,$color)
+//     {
+//         $this->model=$model;
+//         $this->color=$color;
+//     }
+// }
+// $myCar = new Car('BMW',"Black");
+// foreach($myCar as $x => $y){ 
+//     echo "$x : $y"."<br/>";
+// }
+
+$numbers = [3,5,6,-9,10,23];
+foreach($numbers as $number){ 
+    if($number == 5)continue;{ 
+        echo $number;
     }
 }
-$myCar = new Car('BMW',"Black");
-foreach($myCar as $x => $y){ 
-    echo "$x : $y"."<br/>";
-}
+
+
 ?>
