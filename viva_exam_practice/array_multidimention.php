@@ -101,17 +101,28 @@
 // $sum = myfunction(3,5,6,6,7,7,8,8,9);
 // echo $sum;
 
-function myNumber(...$x){ 
-    $m = 0;
-    $len = count($x);
-    for($i=0;$i<$len; $i++){ 
-        $m+= $x[$i];
-    }
-    return $m;
-}
+// function myNumber(...$x){ 
+//     $m = 0;
+//     $len = count($x);
+//     for($i=0;$i<$len; $i++){ 
+//         $m+= $x[$i];
+//     }
+//     return $m;
+// }
 
-$sum = myNumber(4,6,7,78,8,9,9,99);
-echo $sum;
+// $sum = myNumber(4,6,7,78,8,9,9,99);
+// echo $sum;
+
+function myNames ($lastname, ...$firstname){ 
+    $txt = " ";
+    $len = count($firstname);
+    for($i = 0; $i <$len; $i++){ 
+        $txt = $txt."Hi, $firstname[$i]$lastname <br/>";
+    }
+    return $txt;
+}
+$result = myNames("Mia","Tuhin","Toukir");
+echo $result;
 
 
 ?>
