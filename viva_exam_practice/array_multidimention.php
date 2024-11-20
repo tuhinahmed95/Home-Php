@@ -22,12 +22,18 @@
 //     echo $x;
 // }
 
-$x = 0;
+// $x = 0;
 
-while($x < 100){ 
-    $x += 10;
-    if($x ==70)break;
-    echo $x. " ";
-}
+// while($x < 100){ 
+//     $x += 10;
+//     if($x ==70)break;
+//     echo $x. " ";
+// }
+
+$i = 1;
+do{ 
+    echo $i." ";
+    $i++;
+} while($i<5);
 
 ?>
