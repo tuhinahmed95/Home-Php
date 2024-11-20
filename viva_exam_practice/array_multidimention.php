@@ -14,12 +14,20 @@
 
 // myfunction();
 
+// $x = 0;
+
+// while($x<6){ 
+//     $x++;
+//     if($x == 3) continue;
+//     echo $x;
+// }
+
 $x = 0;
 
-while($x<6){ 
-    $x++;
-    if($x == 3) continue;
-    echo $x;
+while($x < 100){ 
+    $x += 10;
+    if($x ==70)break;
+    echo $x. " ";
 }
 
 ?>
