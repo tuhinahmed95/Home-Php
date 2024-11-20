@@ -83,12 +83,23 @@
 // }
 // var_dump($arrays);
 
-function myMessage($model = "rtx90"){ 
-    echo "This is a model : $model <br/>";
+// function myMessage($model = "rtx90"){ 
+//     echo "This is a model : $model <br/>";
+// }
+// myMessage();
+// myMessage('model56');
+// myMessage('model 999');
+
+function myfunction(...$x){ 
+    $n = 0;
+    $len = count($x);
+    for($i=0; $i<$len; $i++){ 
+        $n += $x[$i];
+        return $n;
+    }
 }
-myMessage();
-myMessage('model56');
-myMessage('model 999');
+$sum = myfunction(3,5,6,6,7,7,8,8,9);
+echo $sum;
 
 
 ?>
