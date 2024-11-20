@@ -70,12 +70,25 @@
 //     echo "$x : $y"."<br/>";
 // }
 
-$numbers = [3,5,6,-9,10,23];
-foreach($numbers as $number){ 
-    if($number == 5)continue;{ 
-        echo $number;
-    }
+// $numbers = [3,5,6,-9,10,23];
+// foreach($numbers as $number){ 
+//     if($number == 5)continue;{ 
+//         echo $number;
+//     }
+// }
+
+// $arrays = ['blue','green','red','yello'];
+// foreach($arrays as $array){ 
+//     if($array == "red") $array=="yello";
+// }
+// var_dump($arrays);
+
+function myMessage($model = "rtx90"){ 
+    echo "This is a model : $model <br/>";
 }
+myMessage();
+myMessage('model56');
+myMessage('model 999');
 
 
 ?>
