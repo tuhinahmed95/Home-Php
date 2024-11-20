@@ -90,15 +90,27 @@
 // myMessage('model56');
 // myMessage('model 999');
 
-function myfunction(...$x){ 
-    $n = 0;
+// function myfunction(...$x){ 
+//     $n = 0;
+//     $len = count($x);
+//     for($i=0; $i<$len; $i++){ 
+//         $n += $x[$i];
+//     }
+//     return $n;
+// }
+// $sum = myfunction(3,5,6,6,7,7,8,8,9);
+// echo $sum;
+
+function myNumber(...$x){ 
+    $m = 0;
     $len = count($x);
-    for($i=0; $i<$len; $i++){ 
-        $n += $x[$i];
-        return $n;
+    for($i=0;$i<$len; $i++){ 
+        $m+= $x[$i];
     }
+    return $m;
 }
-$sum = myfunction(3,5,6,6,7,7,8,8,9);
+
+$sum = myNumber(4,6,7,78,8,9,9,99);
 echo $sum;
 
 
