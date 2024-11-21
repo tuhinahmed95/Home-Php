@@ -12,5 +12,16 @@ $bikes = ['pulser','Royal Enfield','zixer','R15','Xblade'];
 foreach($bikes as $bike){ 
     echo $bike. " ";
 }
+echo "<br/>";
+
+$carss = array('name'=>'Audi','brand'=>'Audi-34','price'=>3456000);
+// array_push($carss,"color","red","year",1994);
+// $carss['name']= "BMW";
+// var_dump($carss);
+// // print_r($carss);
+
+foreach($carss as $key=>$cars){ 
+    echo "$key : $cars <br/>";
+}
 
 ?>
