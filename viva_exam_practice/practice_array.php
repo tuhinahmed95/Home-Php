@@ -24,4 +24,13 @@ foreach($carss as $key=>$cars){
     echo "$key : $cars <br/>";
 }
 
+echo "<br/>";
+
+function Myfunction(){
+    echo "This is a function";
+}
+
+$array = ['tuhin','salman','message'=>Myfunction()];
+$array['message']();
+
 ?>
