@@ -38,7 +38,9 @@ $cars = ['name'=>'Audi','color'=>'red','price'=>35999];
 //  $cars ['message'];
 // echo $cars['name'];
 // print_r($cars['name']);
-$cars ['year'] = 1990;
+// $cars ['year'] = 1990;
+// array_push($cars,'collor','reeed','modeeell','tuhhhin');
+$cars += ['modeel'=>'56tyyy','colorrrr'=>'green'];
 print_r($cars);
 
 ?>
