@@ -42,5 +42,10 @@ $cars = ['name'=>'Audi','color'=>'red','price'=>35999];
 // array_push($cars,'collor','reeed','modeeell','tuhhhin');
 $cars += ['modeel'=>'56tyyy','colorrrr'=>'green'];
 print_r($cars);
+echo "<br/>";
+
+$color = ['first'=>'red','second'=>'green','third'=>'yello','four'=>'blue'];
+$newarray = array_diff($color,['red','green','yello']);
+print_r($newarray);
 
 ?>
