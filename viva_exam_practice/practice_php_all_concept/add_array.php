@@ -1,12 +1,13 @@
 <?php
 
 $arrays = ['volvo','toyota','bmw'];
+$arrays [] = 'Lambergint';
 // array_unshift($arrays,'Honey');
 // array_splice($arrays,1,2);
 // unset($arrays[1]);
 // $arrays[0] = 'Kawasaki';
 // array_splice($arrays,1,2);
-print_r($arrays[1]);
+print_r($arrays);
 // var_dump($arrays);
 
 echo "<br/>";
@@ -32,11 +33,12 @@ function myfunction(){
 $cars = ['name'=>'Audi','color'=>'red','price'=>35999];
 // array_push($cars,'brnd','higclass');
 // array_unshift($cars,'first','Brand');
-array_shift($cars);
+// array_shift($cars);
 // $cars ['name'] = 'Lambergini';
 //  $cars ['message'];
 // echo $cars['name'];
 // print_r($cars['name']);
+$cars ['year'] = 1990;
 print_r($cars);
 
 ?>
