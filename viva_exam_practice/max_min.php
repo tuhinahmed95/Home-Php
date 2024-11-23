@@ -20,5 +20,21 @@ krsort($strings);
 foreach($strings as $key=>$string){ 
     echo "Key = ".$key. "Values =".$string. "<br/>";
 }
+echo "<br/>";
+
+$a = 34;
+$b = 3.5;
+$type = (string)$b;
+var_dump($type);
+echo "<br/>";
+echo(pi());
+echo "<br/>";
+$first = 64;
+echo (sqrt($first));
+echo "<br/>";
+
+echo(rand(10,100));
+echo "<br/>";
+echo(round(8.89));
 
 ?>
