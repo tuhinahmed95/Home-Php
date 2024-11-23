@@ -52,7 +52,7 @@ $rafia = [
 ];
 
 foreach($rafia as $key=>$rafi){ 
-    echo "key = ". $key . "Values = ". $rafi. "<br/>";
+    echo $rafia [$key][$rafi];
 }
 
 ?>
