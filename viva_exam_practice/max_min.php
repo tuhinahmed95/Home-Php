@@ -36,5 +36,12 @@ echo "<br/>";
 echo(rand(10,100));
 echo "<br/>";
 echo(round(8.89));
+echo "<br/>";
+$tuhin = [1,3,4,6,7,10];
+$lenght = count($tuhin);
+for($x =1 ; $x < $lenght ; $x++){ 
+    if($x ==7)continue;
+    echo $tuhin[$x];
+}
 
 ?>
