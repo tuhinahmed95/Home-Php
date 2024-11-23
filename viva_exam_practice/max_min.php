@@ -44,4 +44,15 @@ for($x =1 ; $x < $lenght ; $x++){
     echo $tuhin[$x];
 }
 
+echo "<br/>";
+
+$rafia = [
+    ["name"=>"tuhin","profession"=>"developer"],
+    ["first"=>"Rafia","profession"=>"webdeveloper developer"],
+];
+
+foreach($rafia as $key=>$rafi){ 
+    echo "key = ". $key . "Values = ". $rafi. "<br/>";
+}
+
 ?>
