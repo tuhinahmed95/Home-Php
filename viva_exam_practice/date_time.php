@@ -31,6 +31,9 @@ echo "<br/>";
 
 $d = mktime(11,34,5,20,11,2010);
 echo "This is a time = " . date("y/m/d h:i:sa",$d);
+echo "<br/>";
+$time = strtotime("10.10pm april 15 2012");
+echo "this is a previous time = " . date("y-m-d h:i:sa",$time);
 
 
 
