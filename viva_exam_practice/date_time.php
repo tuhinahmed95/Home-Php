@@ -34,6 +34,15 @@ echo "This is a time = " . date("y/m/d h:i:sa",$d);
 echo "<br/>";
 $time = strtotime("10.10pm april 15 2012");
 echo "this is a previous time = " . date("y-m-d h:i:sa",$time);
+echo "<br/>";
+$d = strtotime("tomrrow");
+$d = strtotime("next friday");
+$d = strtotime("+3 month");
+echo "this is a current date = " . date("y-m-d h:i:sa",$d);
+echo "<br/>";
+$cname = "cokkiename";
+$cvalue = "cokkieValue";
+setcookie($cname,$cvalue,time()+("3000*30"),"/");
 
 
 
