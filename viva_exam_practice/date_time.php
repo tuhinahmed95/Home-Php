@@ -22,3 +22,26 @@ echo "<br/>";
 echo "Current Month = ".date("m");
 echo "<br/>";
 echo "Current day = ".date("d");
+echo "<br/>";
+echo "this is a date & time = " . date('h/i/s');
+echo "<br/>";
+date_default_timezone_set("america/new_york");
+echo "The time is = " . date("h/i/sa");
+echo "<br/>";
+
+$d = mktime(11,34,5,20,11,2010);
+echo "This is a time = " . date("y/m/d h:i:sa",$d);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
