@@ -44,6 +44,8 @@ $cname = "cokkiename";
 $cvalue = "cokkieValue";
 setcookie($cname,$cvalue,time()+("3000*30"),"/");
 
+// setcookie("cname","cvalue", time()+3000, "/");
+
 
 
 
