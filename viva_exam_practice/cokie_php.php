@@ -30,4 +30,17 @@ if(count($_COOKIE)>0){
     echo "Cookie is disable";
 }
 
+echo "<br/>";
+
+$string = "23";
+$int = (int)$string;
+echo $int;
+echo "<br/>";
+echo round(3.56);
+echo "<br/>";
+echo rand(10,100);
+echo "<br/>";
+$number = [23,55,66];
+echo (min($number));
+
 ?>
