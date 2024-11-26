@@ -1,9 +1,10 @@
 
 <?php
-$c_name = "Cookie Name";
-$c_value = "Cookie Value";
+$c_name = "Cookie_Name";
+$c_value = "Cookie_Value";
 
 setcookie($c_name,$c_value,time()+ (86400 * 30), "/");
+setcookie('user', "",time()-3600);
 
 ?>
 
@@ -31,6 +32,10 @@ setcookie($c_name,$c_value,time()+ (86400 * 30), "/");
     }else{ 
         echo "cookie is disable";
     }
+
+    echo "<br/>";
+    echo "user is deleted"
+    
     ?>
 
 
