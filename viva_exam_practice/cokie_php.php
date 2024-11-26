@@ -99,10 +99,11 @@ foreach($mnumbers as $num){
     }elseif($num == 0){ 
         echo "This Is A Zero = 0"."<br/>";
     }
+    
 }
 
-echo "Positive Numbers = " . implode(" ,",$positives)."<br/>". PHP_EOL;
-echo "Negetive Numbers = ". implode(" ,",$negetives).PHP_EOL;
+ echo "Positive Numbers = " . implode(" ,",$positives)."<br/>". PHP_EOL;
+ echo "Negetive Numbers = ". implode(" ,",$negetives).PHP_EOL;
 
 echo "<br/>";
 echo "<br/>";
@@ -113,9 +114,20 @@ $ps = [];
 foreach($pn as $p){ 
     if($p >0){ 
         $ps [] = $p;
+    }elseif($p<0){ 
+        echo "negetive = ". $p. "<br/>";
     }
 }
 echo "Positive = ". implode(" ,",$ps);
+
+echo "<br/>";
+
+$x = 1;
+do{ 
+    if($x ==3)break;
+    echo $x."<br/>";
+    $x++;
+} while($x < 6);
 
 
 
