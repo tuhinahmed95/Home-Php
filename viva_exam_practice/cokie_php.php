@@ -1,9 +1,10 @@
 
 
+
 <?php
-$c_name = 'Cookie Name';
-$c_value = "cookie Value";
-setcookie($c_name,$c_value,time()+ (86400 * 30),"/");
+$c_name = 'Cookie_Name'; // কুকির নাম
+$c_value = "Cookie_Value"; // কুকির মান
+setcookie($c_name, $c_value, time() + (86400 * 30), "/"); // কুকি সেট করা (৩০ দিনের জন্য)
 ?>
 
 <!DOCTYPE html>
@@ -15,11 +16,12 @@ setcookie($c_name,$c_value,time()+ (86400 * 30),"/");
 </head>
 <body>
     <?php
-    if(!isset($_COOKIE[$c_name])){ 
-        echo "Cookie Name " .$c_name. "Cookie Is Not Set";
-    }else{ 
-        echo "Cookie is".$c_name . "Set";
-        echo "Value " .$_COOKIE[$c_name] . "Is Set";
+    // কুকি চেক করা হচ্ছে
+    if (!isset($_COOKIE[$c_name])) { 
+        echo "Cookie '$c_name' is not set.";
+    } else { 
+        echo "Cookie '$c_name' is set.<br>";
+        echo "Value: " . $_COOKIE[$c_name];
     }
     ?>
 </body>
