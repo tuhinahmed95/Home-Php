@@ -65,14 +65,14 @@ for($x = 0; $x < $length ; $x++){
 echo "<br/>";
 echo "<br/>";
 
-$pnnumbers = [34,23,12,-9-5,4,0,-7,8,-44];
+$pnnumbers = [34,23,12,-95,4,0,-7,8,-44];
 
 $positive = [];
 $negetive = [];
 
 foreach($pnnumbers as $number){ 
     if($number>0){ 
-        $Positive[] =  $number;
+        $positive[] =  $number;
     }elseif($number<0){ 
         $negetive[] = $number;
     }elseif($number == 0){ 
@@ -80,8 +80,43 @@ foreach($pnnumbers as $number){
     }
 }
 
-echo "Positive Number = ". implode(" , ",$positive)."<br/>";
-echo "Negetive Numbers = ".implode(' , ',$negetive);
+echo "Positive Number = ". implode(" , ",$positive).PHP_EOL."<br/>";
+echo "Negetive Numbers = ".implode(' , ',$negetive).PHP_EOL;
+
+echo "<br/>";
+echo "<br/>";
+
+$mnumbers = [34,-4,8,-9,5,6,-9,2,0];
+
+$positives = [];
+$negetives = [];
+
+foreach($mnumbers as $num){ 
+    if($num > 0){ 
+        $positives[] = $num;
+    }elseif($num<0){ 
+        $negetives[] = $num;
+    }elseif($num == 0){ 
+        echo "This Is A Zero = 0"."<br/>";
+    }
+}
+
+echo "Positive Numbers = " . implode(" ,",$positives)."<br/>". PHP_EOL;
+echo "Negetive Numbers = ". implode(" ,",$negetives).PHP_EOL;
+
+echo "<br/>";
+echo "<br/>";
+
+$pn = [-9,3,-8,4,6,0,-9];
+$ps = [];
+
+foreach($pn as $p){ 
+    if($p >0){ 
+        $ps [] = $p;
+    }
+}
+echo "Positive = ". implode(" ,",$ps);
+
 
 
 ?>
