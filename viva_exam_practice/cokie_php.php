@@ -41,6 +41,47 @@ echo "<br/>";
 echo rand(10,100);
 echo "<br/>";
 $number = [23,55,66];
+// var_dump($number);
 echo (min($number));
+echo "<br/>";
+echo pi();
+echo "<br/>";
+
+$strings = array('name'=>'tuhin','profession'=>'senior developer','address'=>'Gaibandha');
+
+foreach($strings as $key=>$sting){ 
+    echo "Key = " . $key . ",Value = " . $sting."<br/>";
+}
+
+echo "<br/>";
+
+$numbers = [45,23,56,78,90,-4,0];
+$length = count($numbers);
+for($x = 0; $x < $length ; $x++){ 
+    if($numbers[$x] == -4)break;
+    echo $numbers[$x]."<br/>";
+}
+
+echo "<br/>";
+echo "<br/>";
+
+$pnnumbers = [34,23,12,-9-5,4,0,-7,8,-44];
+
+$positive = [];
+$negetive = [];
+
+foreach($pnnumbers as $number){ 
+    if($number>0){ 
+        $Positive[] =  $number;
+    }elseif($number<0){ 
+        $negetive[] = $number;
+    }elseif($number == 0){ 
+        echo "Zero found"."<br/>";
+    }
+}
+
+echo "Positive Number = ". implode(" , ",$positive)."<br/>";
+echo "Negetive Numbers = ".implode(' , ',$negetive);
+
 
 ?>
