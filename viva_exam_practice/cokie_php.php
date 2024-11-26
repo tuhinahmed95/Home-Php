@@ -1,11 +1,9 @@
+
+
 <?php
-    $cokie_name = "user";
-    $cokie_value = "Tuhin Ahmed";
-
-    setcookie($cokie_name, $cokie_value, time()+ (3600), '/');
-
-    
-
+$c_name = 'Cookie Name';
+$c_value = "cookie Value";
+setcookie($c_name,$c_value,time()+ (86400 * 30),"/");
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +15,12 @@
 </head>
 <body>
     <?php
-    if(!isset($_COOKIE[$cokie_name])){ 
-        echo "Cokie is not set";
+    if(!isset($_COOKIE[$c_name])){ 
+        echo "Cookie Name " .$c_name. "Cookie Is Not Set";
     }else{ 
-        echo $_COOKIE[$cokie_name];
+        echo "Cookie is".$c_name . "Set";
+        echo "Value " .$_COOKIE[$c_name] . "Is Set";
     }
     ?>
-    
 </body>
 </html>
