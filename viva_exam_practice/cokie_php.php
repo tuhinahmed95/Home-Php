@@ -172,8 +172,20 @@ echo "<br/>";
 $number = [34,5,6,9,5,8,-3,0,2];
 $len = count($number);
 for($x = 0; $x <$len ; $x ++){ 
-    if($number[$len] == -3) continue;
+    if($number[$x] == -3) continue;
     echo $number[$x]."<br/>";
+}
+
+echo "<br/>";
+echo "Break"."<br/>";
+echo "<br/>";
+
+
+$num1 = [4,9,9,8,6,4,0,-3,178,30,];
+$lent = count($num1);
+for($x = 0; $x <$lent ; $x ++){ 
+    if($num1[$x] == -3)break;
+    echo $num1[$x]."<br/>";
 }
 
 
