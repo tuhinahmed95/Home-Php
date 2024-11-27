@@ -41,4 +41,22 @@ echo "<br/>";
 $arr = ['apple','banana','pineapple','mango','jacfruits'];
 $l = array_map(function($i) {return strlen($i);},$arr);
 print_r($l);
+
+echo "<br/>";
+echo "<br/>";
+
+function callbac ($item){ 
+    return strlen($item);
+}
+
+$a = ['tanvir','toha','java','pdf'];
+$len = array_map('callbac',$a);
+print_r($len);
+
+echo "<br/>";
+echo "<br/>";
+
+$ar = ['hafiz','anurag','hedayet','salman'];
+$lent = array_map(function($item) {return strlen($item);},$ar);
+print_r($lent);
 ?>
