@@ -34,4 +34,11 @@ function my_callbacks ($items){
 $arrays = ['arafat','sabbir','akash',456,89.76];
 $len = array_map('my_callbacks',$arrays);
 print_r($len);
+
+echo "<br/>";
+echo "<br/>";
+
+$arr = ['apple','banana','pineapple','mango','jacfruits'];
+$l = array_map(function($i) {return strlen($i);},$arr);
+print_r($l);
 ?>
