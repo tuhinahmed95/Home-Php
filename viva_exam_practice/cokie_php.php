@@ -149,5 +149,32 @@ echo "6 + 10 = ". sum(6,10)."<br/>";
 echo "6 + 9 = ". sum(6,9)."<br/>";
 // echo "Total = ".$result;
 
+$numbers = [45,6,-7,9,0,-4,10,5];
+$positive = [];
+$negetive = [];
+
+foreach($numbers as $number){ 
+    if($number > 0){ 
+        $positive [] = $number;
+    }elseif ($number < 0){ 
+        $negetive [] = $number;
+    }elseif ($number == 0){ 
+        echo "This is a Zero = 0"."<br/>";
+    }
+}
+
+echo "Positive Numbers = " . implode(" ,", $positive)."<br/>";
+echo "Negetive Numbers = " . implode(" ,", $negetive);
+
+echo "<br/>";
+echo "<br/>";
+
+$number = [34,5,6,9,5,8,-3,0,2];
+$len = count($number);
+for($x = 0; $x <$len ; $x ++){ 
+    if($number[$len] == -3) continue;
+    echo $number[$x]."<br/>";
+}
+
 
 ?>
