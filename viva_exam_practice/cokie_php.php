@@ -114,8 +114,6 @@ $ps = [];
 foreach($pn as $p){ 
     if($p >0){ 
         $ps [] = $p;
-    }elseif($p<0){ 
-        echo "negetive = ". $p. "<br/>";
     }
 }
 echo "Positive = ". implode(" ,",$ps);
@@ -129,6 +127,27 @@ do{
     $x++;
 } while($x < 6);
 
+echo "<br/>";
+
+function myFunction($number = 50){ 
+    echo "Number is = ".$number."<br/>";
+}
+
+myFunction();
+myFunction(100);
+myFunction(200);
+
+echo "<br/>";
+
+function sum($x,$y){ 
+    $z = $x + $y;
+    return $z;
+}
+
+echo "6 + 7 = ". sum(6,7)."<br/>";
+echo "6 + 10 = ". sum(6,10)."<br/>";
+echo "6 + 9 = ". sum(6,9)."<br/>";
+// echo "Total = ".$result;
 
 
 ?>

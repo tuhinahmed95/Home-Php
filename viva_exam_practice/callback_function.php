@@ -24,4 +24,14 @@ $strings = ['apple','banana','orrange','coconut','pineapple'];
 $len = array_map(function($item){return strlen($item);},$strings);
 print_r($len);
 
+echo "<br/>";
+echo "<br/>";
+
+function my_callbacks ($items){ 
+    return strlen($items);
+}
+
+$arrays = ['arafat','sabbir','akash',456,89.76];
+$len = array_map('my_callbacks',$arrays);
+print_r($len);
 ?>
