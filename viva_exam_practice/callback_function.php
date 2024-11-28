@@ -88,4 +88,15 @@ function MyFunction($firstname){
 
 MyFunction('Tuhin');
 
+echo "<br/>";
+echo "<br/>";
+
+function FamilyName ($fname,$year){ 
+    echo $fname." Ahmed "." Old is = " . $year . "<br/>";
+}
+
+FamilyName("Tuhin",1993);
+FamilyName("Toukir",1997);
+FamilyName("Shahriar",1995);
+
 ?>
