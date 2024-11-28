@@ -113,17 +113,17 @@ echo $num;
 echo "<br/>";
 echo "<br/>";
 
-function variaDic (...$x){ 
-    $n = 0;
-    $len = count($x);
-    for($i = 0; $i <$len; $i++){ 
-        $n += $x[$i];
+function VariaDiac (...$x){ 
+    $s = 0;
+    $lent = count($x);
+    for($i = 0; $i <$lent ; $i ++){ 
+        $s += $x[$i];
     }
-    return $n;
+    return $s;
 }
 
-$a = variaDic(4,6,7,3,9,10);
-echo $a;
+$a = VariaDiac(3,5,7,9,2,1);
+echo "Total = " . $a;
 
 
 
