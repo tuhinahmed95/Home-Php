@@ -125,6 +125,19 @@ function VariaDiac (...$x){
 $a = VariaDiac(3,5,7,9,2,1);
 echo "Total = " . $a;
 
+echo "<br/>";
+echo "<br/>";
 
+function VariD($lastname, ...$firstname){ 
+    $text = "";
+    $lent = count($firstname);
+    for($i = 0; $i <$lent ; $i ++){ 
+        $text = $text. " Hi, $firstname[$i] $lastname"."<br/>";
+    }
+    return $text;
+}
+
+$a = VariD("Ahmed",'Tuhin','Toukir','Rafia');
+echo $a;
 
 ?>
