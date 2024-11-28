@@ -99,4 +99,32 @@ FamilyName("Tuhin",1993);
 FamilyName("Toukir",1997);
 FamilyName("Shahriar",1995);
 
+echo "<br/>";
+echo "<br/>";
+
+function Values (&$value){ 
+    $value += 5;
+}
+
+$num = 2;
+Values($num);
+echo $num;
+
+echo "<br/>";
+echo "<br/>";
+
+function variaDic (...$x){ 
+    $n = 0;
+    $len = count($x);
+    for($i = 0; $i <$len; $i++){ 
+        $n += $x[$i];
+    }
+    return $n;
+}
+
+$a = variaDic(4,6,7,3,9,10);
+echo $a;
+
+
+
 ?>
