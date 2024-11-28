@@ -59,4 +59,33 @@ echo "<br/>";
 $ar = ['hafiz','anurag','hedayet','salman'];
 $lent = array_map(function($item) {return strlen($item);},$ar);
 print_r($lent);
+
+echo "<br/>";
+echo "<br/>";
+
+function CallBack($item){ 
+    return strlen($item);
+}
+
+$array = ['tuhin','tasrif','toha'];
+$lent = array_map('CallBack',$array);
+print_r($lent);
+
+echo "<br/>";
+echo "<br/>";
+
+$arr = ['tuhin','toha','tanvir','joha'];
+
+$lent = array_map(function($itme){return strlen($itme);},$arr);
+print_r($lent);
+
+echo "<br/>";
+echo "<br/>";
+
+function MyFunction($firstname){ 
+    echo $firstname .' '. "Ahmed";
+}
+
+MyFunction('Tuhin');
+
 ?>
