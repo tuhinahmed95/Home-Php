@@ -140,4 +140,13 @@ function VariD($lastname, ...$firstname){
 $a = VariD("Ahmed",'Tuhin','Toukir','Rafia');
 echo $a;
 
+echo "<br/>";
+echo "<br/>";
+
+function TypesF (int $a, int $b){ 
+    return $a + $b;
+}
+echo TypesF(5,5);
+
+
 ?>
