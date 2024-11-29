@@ -7,16 +7,13 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>third</title>
+    <title>Logout Page</title>
 </head>
 <body>
     <?php
-         
-         session_unset();
 
-         session_destroy();
-
-         echo "All session variable is removed and session is destroy";
+    session_unset();
+    session_destroy();
     ?>
 </body>
 </html>

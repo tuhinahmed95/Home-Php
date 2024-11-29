@@ -1,5 +1,11 @@
 <?php
-session_start();
+
+// session_start();
+include 'demo_1.php';
+include 'demo_1.php';
+include 'demo_1.php';
+require 'demo_1.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -7,12 +13,12 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>second</title>
+    <title>Page no -2</title>
 </head>
 <body>
     <?php
-    echo "Favourite Color Is " .$_SESSION['NAME']."<br/>";
-    echo "Favourite Animal Is " .$_SESSION['PROFESSION']." ";
+    // echo "Favorite Name Is ".$_SESSION['name']."<br/>";
+    // echo "Fovorite Color Is ". $_SESSION['color'];
     ?>
 </body>
 </html>

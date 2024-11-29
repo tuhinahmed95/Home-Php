@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 ?>
 
 <!DOCTYPE html>
@@ -7,15 +7,16 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first</title>
+    <title>session</title>
 </head>
 <body>
     <?php
-        $_SESSION['NAME']="TUHIN";
-        $_SESSION['PROFESSION']="SENIOR DEVELOPER";
-        echo "SESSION VARIABLE IS SET NOW";
-
-        
+        // $_SESSION['name'] = "Tuhin Ahemd";
+        // $_SESSION['color'] = "Green";
+        // echo "Session Variable Is Set Now";
+        echo "Hello, I am including demo 2 no page <br/>";
     ?>
+
+    
 </body>
 </html>
