@@ -94,5 +94,17 @@ if(!isset($_COOKIE[$names])){
     echo "Cokkie Value " . $_COOKIE[$names];
 }
 
+echo "<br/>";
+echo "<br/>";
+
+$newAray = ['bmw','volvo','toyota','x-corola'];
+array_unshift($newAray,'Lambergini');
+print_r($newAray);
+echo "<br/>";
+echo "<br/>";
+
+$assA = array("name"=>"Tuhin","profession"=>"developer","position"=>"junior","company name"=>"logic software lt");
+
+
 
 ?>
