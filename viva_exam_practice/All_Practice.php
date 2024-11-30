@@ -113,11 +113,16 @@ echo "<br/>";
 
 $arays = [3,6,9,-5,0];
 
-foreach($arrays as $array){ 
+foreach($arays as $array){ 
     if($array == -5) break;{ 
-        echo "Negetive = " . $array;
+        echo "Negetive = " . $array ;
     }
 }
+// $lent = count($arrays);
+// for($i = 0; $i < $lent ; $i ++){ 
+//     if($arays[$i] == -5)break;
+//     echo $arays [$i];
+// }
 
 
 ?>
