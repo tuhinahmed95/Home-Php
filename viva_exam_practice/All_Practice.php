@@ -114,8 +114,8 @@ echo "<br/>";
 $arays = [3,6,9,-5,0];
 
 foreach($arays as $array){ 
-    if($array == -5) break;{ 
-        echo "Negetive = " . $array ;
+    if($array == -5) continue;{ 
+        echo "Negetive = " . $array ."<br/>";
     }
 }
 // $lent = count($arrays);
