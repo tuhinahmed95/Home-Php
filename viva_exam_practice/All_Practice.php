@@ -104,7 +104,20 @@ echo "<br/>";
 echo "<br/>";
 
 $assA = array("name"=>"Tuhin","profession"=>"developer","position"=>"junior","company name"=>"logic software lt");
+foreach($assA as $key=>$arry){ 
+    echo " $key : $arry <br/>";
+}
 
+echo "<br/>";
+echo "<br/>";
+
+$arays = [3,6,9,-5,0];
+
+foreach($arrays as $array){ 
+    if($array == -5) break;{ 
+        echo "Negetive = " . $array;
+    }
+}
 
 
 ?>
