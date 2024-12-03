@@ -192,4 +192,13 @@ $arrays = ['abir','aslam','mister','salim','bellal'];
 $len = array_map(function($item){return strlen($item);},$arrays);
 print_r($len);
 
+echo "<br/>";
+echo "<br/>";
+
+function MyFunctions ($item = 10){ 
+    echo $item."<br/>";
+}
+
+MyFunctions();
+MyFunctions(20);
 ?>
