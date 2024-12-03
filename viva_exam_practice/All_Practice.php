@@ -195,10 +195,38 @@ print_r($len);
 echo "<br/>";
 echo "<br/>";
 
-function MyFunctions ($item = 10){ 
-    echo $item."<br/>";
+function MyFunctions ($item){ 
+    if($item > 10){ 
+        echo $item . "<br/>";
+    } else {
+        echo "Parameeter large to 10";
+    }
 }
 
-MyFunctions();
 MyFunctions(20);
+MyFunctions(8);
+
+echo "<br/>";
+echo "<br/>";
+
+
+function MyFunctionss($item) {
+    if ($item > 10) { 
+        echo $item . "<br/>";
+    } else {
+        echo "প্যারামিটারটি ১০ এর থেকে বড় হতে হবে।<br/>";
+    }
+}
+
+MyFunctionss(15); 
+MyFunctionss(5);  
+
+echo "<br/>";
+echo "<br/>";
+
+$marray = ['name'=>'tuhin','profession'=>'developer','position'=>'junior','company'=>'logic software'];
+$p = array_change_key_case($marray,CASE_LOWER);
+print_r($p);
+
+
 ?>
