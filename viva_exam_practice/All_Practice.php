@@ -188,5 +188,8 @@ print_r($lent);
 echo "<br/>";
 echo "<br/>";
 
+$arrays = ['abir','aslam','mister','salim','bellal'];
+$len = array_map(function($item){return strlen($item);},$arrays);
+print_r($len);
 
 ?>
