@@ -174,4 +174,19 @@ switch($marks){
     echo "Your Are Fail";
 }
 
+echo "<br/>";
+echo "<br/>";
+
+function CallBack ($item){ 
+    return strlen($item);
+}
+
+$array = ['tuhin','shakib','ahmed','rizwan khan','salman butt'];
+$lent = array_map("CallBack",$array);
+print_r($lent);
+
+echo "<br/>";
+echo "<br/>";
+
+
 ?>
