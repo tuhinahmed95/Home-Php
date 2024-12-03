@@ -128,9 +128,16 @@ echo "<br/>";
 echo "<br/>";
 
 $array = [5,7,-9,23,10];
-foreach($array as $array){ 
-    if($array == -9)break;{ 
-        echo $array."<br/>";
+// foreach($array as $array){ 
+//     if($array == -9)break;{ 
+//         echo $array."<br/>";
+//     }
+// }
+
+$lent = count($array);
+for($i = 0; $i < $lent ; $i ++){ 
+    if($array[$i] == -9)continue; { 
+        echo $array[$i]."<br/>";
     }
 }
 
