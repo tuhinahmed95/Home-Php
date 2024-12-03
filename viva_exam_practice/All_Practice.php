@@ -136,10 +136,42 @@ $array = [5,7,-9,23,10];
 
 $lent = count($array);
 for($i = 0; $i < $lent ; $i ++){ 
-    if($array[$i] == -9)continue; { 
+    if($array[$i] == -9)break; { 
         echo $array[$i]."<br/>";
     }
 }
 
+echo "<br/>";
+echo "<br/>";
+
+define('names','tuhin ahmed khan');
+echo names;
+
+echo "<br/>";
+
+$marks = 70;
+
+switch($marks){ 
+    case 90:
+    echo "Your Result Is = A +";
+    break;
+    case 70:
+    echo "Your Result Is = A";
+    break;
+    case 60:
+    echo "Your Result Is = A - ";
+    break;
+    case 50:
+    echo "Your Result Is = B";
+    break;
+    case 40:
+    echo "Your Result Is = C";
+    break;
+    case 33:
+    echo "Your Result Is = D";
+    break;
+    default:
+    echo "Your Are Fail";
+}
 
 ?>
