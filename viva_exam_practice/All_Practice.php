@@ -124,5 +124,15 @@ foreach($arays as $array){
 //     echo $arays [$i];
 // }
 
+echo "<br/>";
+echo "<br/>";
+
+$array = [5,7,-9,23,10];
+foreach($array as $array){ 
+    if($array == -9)break;{ 
+        echo $array."<br/>";
+    }
+}
+
 
 ?>
