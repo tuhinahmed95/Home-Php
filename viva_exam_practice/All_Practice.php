@@ -241,5 +241,29 @@ $tuhin = ['ahmed','khan','rafia','anika','fariha','sunnah','atif','akbar','jafar
 $a = array_chunk($tuhin,2);
 print_r($a);
 
+echo "<br/>";
+echo "<br/>";
+
+$marray = [
+    [
+        'firstname'=>'Tuhin',
+        'lastname'=>'Ahmed',
+        'email'=>'mtuhinahmed@gmail.com'
+    ],
+    [
+        'firstname'=>'Abir',
+        'lastname'=>'Hasan',
+        'email'=>'abir@gmail.com'
+    ],
+    [
+        'firstname'=>'Abrar',
+        'lastname'=>'Khan',
+        'email'=>'khan@gmail.com'
+    ]
+    ];
+
+$new = array_column($marray,'firstname');
+print_r($new);
+
 
 ?> 
