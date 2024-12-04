@@ -225,8 +225,21 @@ echo "<br/>";
 echo "<br/>";
 
 $marray = ['name'=>'tuhin','profession'=>'developer','position'=>'junior','company'=>'logic software'];
-$p = array_change_key_case($marray,CASE_LOWER);
-print_r($p);
+// $p = array_change_key_case($marray,CASE_LOWER);
+// print_r($p);
+$change = array_change_key_case($marray,CASE_UPPER);
+// foreach($marray as $key => $arr){ 
+//     echo "key = $key = Value = $arr <br/>";
+// }
+
+echo "<br/>";
+echo "<br/>";
+
+$tuhin = ['ahmed','khan','rafia','anika','fariha','sunnah','atif','akbar','jafar'];
+// $t = array_chunk($tuhin,3);
+// print_r($t)."<br/>";
+$a = array_chunk($tuhin,2);
+print_r($a);
 
 
-?>
+?> 
