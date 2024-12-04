@@ -262,8 +262,7 @@ $marray = [
     ]
     ];
 
-$new = array_column($marray,'firstname');
-print_r($new);
-
+$newArray =array_column($marray,'email');
+print_r($newArray);
 
 ?> 
