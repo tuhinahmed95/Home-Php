@@ -276,4 +276,11 @@ $name = array('mtuhin@gmail.com','aslam@gmail.com','mister@gmial.com');
 $c = array_combine($email,$name);
 print_r($c);
 
+echo "<br/>";
+echo "<br/>";
+
+$animals = array('dog','cat','monkey','dog','cow','eliphant','cow','dog');
+$count = array_count_values($animals);
+print_r($count);
+
 ?> 
