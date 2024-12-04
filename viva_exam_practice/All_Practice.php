@@ -284,8 +284,17 @@ print_r(array_count_values($animals));
 echo "<br/>";
 echo "<br/>";
 
-$a1 = ['first'=>'red','second'=>'green','third'=>'yello','four'=>'powerblue'];
+$a1 = ['first'=>'red','second'=>'green','third'=>'yello','four'=>'powerblue','five'=>'skyblue'];
 $b1 = ['one'=>'green','two'=>'red','three'=>'yello'];
-print_r(array_diff($a1,$b1));
+$c1 = ['tuhin'=>'green','abir'=>'red','suhi'=>'powerblue'];
+print_r(array_diff($a1,$b1,$c1));
+
+echo "<br/>";
+echo "<br/>";
+
+$as = ['first'=>'orrange','second'=>'banana','third'=>'apple','four'=>'pineapple'];
+$bs = ['first'=>'orrange','second'=>'banana','third'=>'apple'];
+$cs = array_diff_assoc($as,$bs);
+print_r($cs);
 
 ?> 
