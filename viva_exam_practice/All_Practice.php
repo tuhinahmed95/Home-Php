@@ -280,7 +280,12 @@ echo "<br/>";
 echo "<br/>";
 
 $animals = array('dog','cat','monkey','dog','cow','eliphant','cow','dog');
-$count = array_count_values($animals);
-print_r($count);
+print_r(array_count_values($animals));
+echo "<br/>";
+echo "<br/>";
+
+$a1 = ['first'=>'red','second'=>'green','third'=>'yello','four'=>'powerblue'];
+$b1 = ['one'=>'green','two'=>'red','three'=>'yello'];
+print_r(array_diff($a1,$b1));
 
 ?> 
