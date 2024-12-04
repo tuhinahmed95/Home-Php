@@ -297,4 +297,15 @@ $bs = ['first'=>'orrange','second'=>'banana','third'=>'apple'];
 $cs = array_diff_assoc($as,$bs);
 print_r($cs);
 
+echo "<br/>";
+echo "<br/>";
+
+function HelloTuhin($a){ 
+    return ($a*$a);
+}
+
+$map = [2,5,6,8];
+$new = array_map('HelloTuhin',$map);
+print_r($new);
+
 ?> 
