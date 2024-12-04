@@ -246,23 +246,34 @@ echo "<br/>";
 
 $marray = [
     [
+        'id'=>1234,
         'firstname'=>'Tuhin',
         'lastname'=>'Ahmed',
         'email'=>'mtuhinahmed@gmail.com'
     ],
     [
+        'id'=>5678,
         'firstname'=>'Abir',
         'lastname'=>'Hasan',
         'email'=>'abir@gmail.com'
     ],
     [
+        'id'=>9012,
         'firstname'=>'Abrar',
         'lastname'=>'Khan',
         'email'=>'khan@gmail.com'
     ]
     ];
 
-$newArray =array_column($marray,'email');
+$newArray =array_column($marray,'id','email');
 print_r($newArray);
+
+echo "<br/>";
+echo "<br/>";
+
+$email = array('tuhin','aslam','mister');
+$name = array('mtuhin@gmail.com','aslam@gmail.com','mister@gmial.com');
+$c = array_combine($email,$name);
+print_r($c);
 
 ?> 
