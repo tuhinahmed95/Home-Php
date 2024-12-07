@@ -16,3 +16,54 @@ function MyFunction(){
 }
 MyFunction();
 echo $y;
+echo "<br/>";
+echo "<br/>";
+
+$i = 10;
+$v = 20;
+function MFunction(){ 
+    $GLOBALS['y'] = $GLOBALS['i'] = $GLOBALS['v'];
+    
+}
+MFunction();
+print $y;
+echo "<br/>";
+echo "<br/>";
+function Statics(){ 
+    static $x = 0;
+    echo $x;
+    $x++;
+}
+Statics();
+echo "<br/>";
+Statics();
+echo "<br/>";
+Statics();
+echo "<br/>";
+echo "<br/>";
+
+$names = 'tuhin';
+function Tuhin (){ 
+    global $names;
+    echo $names;
+}
+Tuhin();
+echo "<br/>";
+echo "<br/>";
+echo "tuhib",'ahmed','khan';
+echo "<br/>";
+echo "<br/>";
+print "tuhin ahmed khan";
+echo "<br/>";
+echo "<br/>";
+
+$hey = " Hello Tuhin";
+$a =  explode(" ",$hey);
+print_r($a);
+echo "<br/>";
+echo "<br/>";
+
+$array = ['tuhin','ahmed','rafia','kabir','khan'];
+// $string = implode(" ", $array);
+// echo $string;
+$out = array_map(function(item){return strlen($item);},$array);
