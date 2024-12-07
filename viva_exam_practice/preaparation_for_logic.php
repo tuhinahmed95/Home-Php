@@ -66,4 +66,14 @@ echo "<br/>";
 $array = ['tuhin','ahmed','rafia','kabir','khan'];
 // $string = implode(" ", $array);
 // echo $string;
-$out = array_map(function(item){return strlen($item);},$array);
+$out = array_map(function($item){return strlen($item);},$array);
+print_r($out);
+
+echo "<br/>";
+echo "<br/>";
+function CallBack($item){ 
+    return strlen($item);
+}
+$a = ['tuhin','fruits','banana','orrange'];
+$v = array_map('CallBack',$a);
+print_r($v);
