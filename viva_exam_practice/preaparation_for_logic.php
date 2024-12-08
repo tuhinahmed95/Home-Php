@@ -151,7 +151,10 @@ $names = array(
     array('age'=>30,'address'=>'dhaka','email'=>'mtuhin@gmail.com')
 );
 foreach ($names as $key=>$data){ 
-    echo "$key $data";
+    echo "Row = $key <br/>";
+    foreach($names[$key] as $subkey => $d){ 
+        echo "SubKey : $subkey Value = $d <br/>";
+    }
 }
 echo "<br/>";
 echo "<br/>";
@@ -165,6 +168,23 @@ foreach($names as $key=> $data){
     echo "Index : $key <br/>";
     foreach($data as $subkey => $value){ 
         echo " $subkey : $value <br/>";
+    }
+}
+
+echo "<br/>";
+echo "<br/>";
+
+$arrays = array(
+    array('volvo'=>345,'name'=>'tuhin'),
+    array('toyota'=>'brand','price'=>67890),
+    array('bmw'=>'brand','price'=>67890),
+    array('audi'=>'brand','price'=>67890),
+);
+
+for($row = 0; $row < 4 ; $row ++){ 
+    echo "Row Number = $row <br?";
+    foreach($arrays [$row] as $key => $value){ 
+        echo "Key, $key : $value <br/>";
     }
 }
 
