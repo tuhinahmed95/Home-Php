@@ -239,6 +239,19 @@ echo "<br/>";
 $test2 = ['name'=>'rafia','address'=>'gaibandha','age'=>33];
 $test2['name'] = 'Rafia Kabir Khan';
 print_r($test2);
+echo "<br/>";
+echo "<br/>";
+
+$test3 = ['habib','kahn','orrange'];
+$test3 [] = 'Tuhin';
+print_r($test3);
+echo "<br/>";
+echo "<br/>";
+
+$test4 = ['name'=>'tuhin','address'=>'gaibandha'];
+$test4 ['profession'] = 'Developer';
+print_r($test4);
+
 
 
 
