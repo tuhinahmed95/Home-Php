@@ -100,3 +100,7 @@ for($x = 0 ; $x < $lnet; $x++){
         echo $data[$x];
     }
 }
+echo"<br/>";
+echo"<br/>";
+
+echo (min(2,6,7));
