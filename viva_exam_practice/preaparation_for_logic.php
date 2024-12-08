@@ -113,3 +113,23 @@ function familName($fname, $year){
 familName("Tuhin", "1993");
 familName('Toukir', '1997');
 familName('Abrar', '1994');
+echo"<br/>";
+echo"<br/>";
+
+function MathF(& $num){ 
+    $num += 5;
+}
+$num2 = 6;
+MathF($num2);
+echo $num2;
+
+echo"<br/>";
+echo"<br/>";
+
+function sum ($x,$y){ 
+    $z = $x + $y;
+    return $z;
+}
+
+$result = sum(4,69);
+echo $result;
