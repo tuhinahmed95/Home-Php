@@ -133,3 +133,38 @@ function sum ($x,$y){
 
 $result = sum(4,69);
 echo $result;
+
+echo"<br/>";
+echo "<br/>";
+
+$ara = [4,7,90,20-9,0];
+foreach($ara as $r){ 
+    if($r == -9) break;{ 
+        echo $r." ";
+    }
+}
+echo "<br/>";
+echo "<br/>";
+
+$names = array(
+    array('name'=>'tuhin','profession'=>'developer','compnay'=>'logic'),
+    array('age'=>30,'address'=>'dhaka','email'=>'mtuhin@gmail.com')
+);
+foreach ($names as $key=>$data){ 
+    echo "$key $data";
+}
+echo "<br/>";
+echo "<br/>";
+
+$names = array(
+    array('name'=>'tuhin','profession'=>'developer','compnay'=>'logic'),
+    array('age'=>30,'address'=>'dhaka','email'=>'mtuhin@gmail.com')
+);
+
+foreach($names as $key=> $data){ 
+    echo "Index : $key <br/>";
+    foreach($data as $subkey => $value){ 
+        echo " $subkey : $value <br/>";
+    }
+}
+
