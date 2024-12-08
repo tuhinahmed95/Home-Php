@@ -188,3 +188,20 @@ for($row = 0; $row < 4 ; $row ++){
     }
 }
 
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+$rafia = '{"name":"Rafia","profession":"Alsha","status":"married with tuhin"}';
+$arra = json_decode($rafia);
+print_r($arra);
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+$array = ['name'=>'Tuhin','address'=>'gaibandha','profession'=>'developer','company'=>'logic'];
+$json = json_encode($array);
+echo $json;
+
+
+
