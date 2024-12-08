@@ -77,3 +77,16 @@ function CallBack($item){
 $a = ['tuhin','fruits','banana','orrange'];
 $v = array_map('CallBack',$a);
 print_r($v);
+
+echo "<br/>";
+echo "<br/>";
+
+$json = '{"name":"Tuhin","profession":"developer","address":"Gaibandha","Company":"logic"}';
+$array = json_decode($json);
+print_r($array);
+
+echo"<br/>";
+echo"<br/>";
+$arr = ['name'=>'tuhin','profession'=>'developer','company'=>'logic'];
+$jsons = json_encode($arr);
+echo $jsons;
