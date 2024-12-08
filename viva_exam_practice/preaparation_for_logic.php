@@ -227,5 +227,19 @@ for($row = 0; $row < 4; $row ++){
    }
 }
 
+echo "<br/>";
+echo "<br/>";
+
+$test = ['tuhin','khan','rafia'];
+$test[0]= "Tuhin Ahmed";
+print_r($test);
+echo "<br/>";
+echo "<br/>";
+
+$test2 = ['name'=>'rafia','address'=>'gaibandha','age'=>33];
+$test2['name'] = 'Rafia Kabir Khan';
+print_r($test2);
+
+
 
 
