@@ -104,3 +104,12 @@ echo"<br/>";
 echo"<br/>";
 
 echo (min(2,6,7));
+echo"<br/>";
+echo"<br/>";
+
+function familName($fname, $year){ 
+    echo "$fname Ahme . Born In $year  <br/>";
+}
+familName("Tuhin", "1993");
+familName('Toukir', '1997');
+familName('Abrar', '1994');
