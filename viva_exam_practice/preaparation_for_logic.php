@@ -90,3 +90,13 @@ echo"<br/>";
 $arr = ['name'=>'tuhin','profession'=>'developer','company'=>'logic'];
 $jsons = json_encode($arr);
 echo $jsons;
+echo"<br/>";
+echo"<br/>";
+
+$data = [3,5,8,-7,0,100];
+$lnet = count($data);
+for($x = 0 ; $x < $lnet; $x++){
+    if($data[$x] == -7)continue;{ 
+        echo $data[$x];
+    }
+}
