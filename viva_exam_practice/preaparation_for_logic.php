@@ -202,6 +202,30 @@ echo "<br/>";
 $array = ['name'=>'Tuhin','address'=>'gaibandha','profession'=>'developer','company'=>'logic'];
 $json = json_encode($array);
 echo $json;
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+$multi = [
+    ['first'=>'name','second'=>'profession','third'=>'address'],
+    ['second'=>'hi','second'=>'profession','third'=>'dhaka'],
+    ['third'=>'hello','second'=>'profession','third'=>'gaibandha'],
+    ['four'=>'hey','second'=>'profession','third'=>'barishal'],
+];
+
+// for($x = 0; $x < 4; $x++){ 
+//     echo " Row = $x <br/>";
+//     foreach($multi[$x] as $key => $data){ 
+//         echo "Key = $key Value = $data <br/>";
+//     }
+// }
+
+for($row = 0; $row < 4; $row ++){ 
+    echo "Row = $row <br/>";
+   foreach($multi[$row] as $key => $data){ 
+    echo "$key : $data <br/>";
+   }
+}
 
 
 
