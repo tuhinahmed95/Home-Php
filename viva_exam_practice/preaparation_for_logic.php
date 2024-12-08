@@ -252,6 +252,21 @@ $test4 = ['name'=>'tuhin','address'=>'gaibandha'];
 $test4 ['profession'] = 'Developer';
 print_r($test4);
 
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+$newa = ['tuhin','ahmed','khan','rafia','kabir','fariha','anika','sunnah'];
+array_splice($newa,1,3);
+print_r($newa);
+echo "<br/>";
+echo "<br/>";
+
+$newa = ['tuhin','ahmed','khan','rafia','kabir','fariha','anika','sunnah'];
+unset($newa[0],$newa[5]);
+print_r($newa);
+
+
 
 
 
