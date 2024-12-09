@@ -266,6 +266,12 @@ $newa = ['tuhin','ahmed','khan','rafia','kabir','fariha','anika','sunnah'];
 unset($newa[0],$newa[5]);
 print_r($newa);
 
+echo "<br/>";
+echo "<br/>";
+
+$khan = ['tuhin','ahmed','shakib','aslam','rafsan'];
+array_splice($khan,0,2);
+print_r($khan);
 
 
 
