@@ -287,7 +287,22 @@ $newa = ['name'=>'tuhin','profession'=>'developer','address'=>'gaibandha','compa
 krsort($newa);
 print_r($newa);
 
+echo "<br/>";
+echo "<br/>";
 
+$multid = [
+    ['name'=>'tuhin','age'=>30,'profession'=>'developer','adress'=>'gaibandha','company'=>'logice'],
+    ['name'=>'tuhin','age'=>30,'profession'=>'developer','adress'=>'gaibandha','company'=>'logice'],
+    ['name'=>'tuhin','age'=>30,'profession'=>'developer','adress'=>'gaibandha','company'=>'logice'],
+    ['name'=>'tuhin','age'=>30,'profession'=>'developer','adress'=>'gaibandha','company'=>'logice'],
+];
+
+foreach($multid as $key =>$data){ 
+    echo "Row = $key <br/>";
+    foreach($data as $k => $value){ 
+        echo "key = $k : $value <br/>";
+    }
+}
 
 
 
