@@ -270,8 +270,23 @@ echo "<br/>";
 echo "<br/>";
 
 $khan = ['tuhin','ahmed','shakib','aslam','rafsan'];
-array_splice($khan,0,2);
+// array_splice($khan,0,2);
+// print_r($khan);
+// unset($khan[3],$khan[0]);
+// print_r($khan);
+// $khan [0] = "Tuhin Ahmed Khan";
+// print_r($khan);
+rsort($khan);
 print_r($khan);
+echo "<br/>";
+echo "<br/>";
+
+$newa = ['name'=>'tuhin','profession'=>'developer','address'=>'gaibandha','company'=>'logice'];
+// ksort($newa);
+// print_r($newa);
+krsort($newa);
+print_r($newa);
+
 
 
 
