@@ -400,5 +400,13 @@ $ma = [
     $nc = array_count_values($acount);
     print_r($nc);
 
+    echo "<br/>";
+    echo "<br/>";
+
+$adiff1 = ['orrange','banana','apple','pineapple'];
+$adiff2 = ['orrange','banana','apple'];
+$result = array_diff($adiff1,$adiff2);
+print_r($result);    
+
 
 
