@@ -425,6 +425,23 @@ $carray = ['apple','banana','orrange','pineapple'];
 $lent = array_map(function($item){return strlen($item);},$carray);
 print_r($lent);
 
+echo "<br/>";
+echo "<br/>";
+
+$ar = [5,9,0,-5,89];
+
+$lent = count($ar);
+for($x = 0; $x < $lent ; $x++){ 
+    if($ar[$x]== -5)break;{ 
+        echo "$ar[$x]<br/>";
+    }
+}
+
+// foreach( $ar as $a){ 
+//     if( $a == -5) continue;
+//     echo "$a <br/>";
+// }
+
 
 
 
