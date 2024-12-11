@@ -336,5 +336,34 @@ $arrays = ['tuhin','ahmed','sabbir','tasrif','nehal','ripon','munna'];
 
 print_r(array_chunk($arrays,3));
 
+echo "<br/>";
+echo "<br/>";
+
+$first = ['tuhin','tasrif','nehal','sabbir'];
+$second = [30,31,27,23];
+$combine = array_combine($first,$second);
+print_r($combine);
+
+echo "<br/>";
+echo "<br/>";
+$multi = ['name'=>'tuhin','profession'=>'developer','company'=>'logic'];
+print_r(array_change_key_case($multi,CASE_LOWER));
+echo "<br/>";
+echo "<br/>";
+
+$multiDimention = [
+    ['tuhin','tanvir','tomal','toha','tuba'],
+    ['abir','aslam','afif','adnan','asif'],
+    ['habib','harun','hasan','hasnat','hafiz'],
+    ['rifat','ratul','rohan','rafin','rafsan']
+];
+
+foreach($multiDimention as $key=> $multi){ 
+    echo "Row = $key <br/>";
+    foreach($multi as $row =>$data){ 
+        echo "Key = : $row Value = $data <br/>";
+    }
+}
+
 
 
