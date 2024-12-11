@@ -408,5 +408,23 @@ $adiff2 = ['orrange','banana','apple'];
 $result = array_diff($adiff1,$adiff2);
 print_r($result);    
 
+echo "<br/>";
+echo "<br/>";
+
+function Cback ($item){ 
+    return strlen($item);
+}
+$array = ['tuhin','nehal','munna','tasrif','sabbir'];
+$lent = array_map("Cback",$array);
+print_r($lent);
+
+echo "<br/>";
+echo "<br/>";
+
+$carray = ['apple','banana','orrange','pineapple'];
+$lent = array_map(function($item){return strlen($item);},$carray);
+print_r($lent);
+
+
 
 
