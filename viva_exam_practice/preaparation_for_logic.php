@@ -393,5 +393,12 @@ $ma = [
     $new = array_column($ma, 'name');
     print_r($new);
 
+    echo "<br/>";
+    echo "<br/>";
+
+    $acount = ['tuhin','rafia','tuhin','a','bc','a','a'];
+    $nc = array_count_values($acount);
+    print_r($nc);
+
 
 
