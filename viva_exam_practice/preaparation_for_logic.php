@@ -364,6 +364,34 @@ foreach($multiDimention as $key=> $multi){
         echo "Key = : $row Value = $data <br/>";
     }
 }
+echo "<br/>";
+echo "<br/>";
+
+$ma = [
+    [
+        'name'=>'Tuhin',
+        'profession'=>'developer',
+        'id' =>'1280674'
+    ],
+    [
+        'name'=>'Nehal',
+        'profession'=>'enginier',
+        'id' =>'127865'
+    ],
+    [
+        'name'=>'Munna',
+        'profession'=>'App developer',
+        'id' =>'123456'
+    ],
+    [
+        'name'=>'Kabir khan',
+        'profession'=>'Junior Developer',
+        'id' =>'234455'
+    ]
+    ];
+
+    $new = array_column($ma, 'name');
+    print_r($new);
 
 
 
