@@ -188,5 +188,13 @@ for($x = 0; $x <$lent ; $x ++){
     echo $num1[$x]."<br/>";
 }
 
+echo "<br/>";
+echo "<br/>";
+
+$array = [
+    ['name'=>'Tuhin','Profession'=>'Developer','Company'=>'Software'],
+    ['name'=>'Sabbir','Profession'=>'Front Developer','Company'=>'BD Calling'],
+    ['name'=>'Tasrif','Profession'=>'Enginieer','Company'=>'Era'],
+];
 
 ?>
