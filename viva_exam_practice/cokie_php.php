@@ -197,4 +197,8 @@ $array = [
     ['name'=>'Tasrif','Profession'=>'Enginieer','Company'=>'Era'],
 ];
 
+foreach($array as $key =>$arr){ 
+    echo "Row = $key <br/>";
+}
+
 ?>
