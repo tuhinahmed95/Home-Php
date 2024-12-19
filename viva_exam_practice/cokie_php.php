@@ -199,6 +199,9 @@ $array = [
 
 foreach($array as $key =>$arr){ 
     echo "Row = $key <br/>";
+    foreach($arr as $col =>$a){ 
+        echo "Col = $col Value = $a <br/>";
+    }
 }
 
 ?>
