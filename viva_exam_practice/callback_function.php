@@ -148,5 +148,9 @@ function TypesF (int $a, int $b){
 }
 echo TypesF(5,5);
 
+function MyFuncTions($item){ 
+    return strlen($item);
+}
+
 
 ?>
