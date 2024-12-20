@@ -152,5 +152,9 @@ function MyFuncTions($item){
     return strlen($item);
 }
 
+$AaC = ['tuhin','tasrif','arif','nehal'];
+$call = array_map('MyFuncTions',$Aac);
+print_r($call);
+
 
 ?>
