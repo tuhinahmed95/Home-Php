@@ -1,13 +1,6 @@
 <?php
 // practice castig
 
-$arrays = ['tuhin','aryan','salman','amir'];
-// $str = (string)$arrays;
-$strr = implode(" ,", $arrays);
-echo $strr;
-echo "<br/>";
-echo "<br/>";
-
 $str = "tuhin Ahmed Gaibandha";
 $array = (array)$str;
 print_r($array);
