@@ -45,3 +45,6 @@ foreach($emp as list("Id" =>$id, "Name" =>$name,"Designation" =>$designation,"sa
         </tr>";
 }
 echo "<table/>";
+
+echo "<br/>";
+echo "<br/>";
