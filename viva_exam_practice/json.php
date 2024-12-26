@@ -29,12 +29,18 @@ $js = ['tuhin','tanvir','tomal'];
 $json = json_encode($js);
 echo $json;
 
-echo "<br/>";
-echo "<br/>";
 
+echo "<br/>";
+echo "<br/>";
 $arra = '{"name":"Tuhin","address":"Gaibandha","Status":"Single"}';
 $arrays = json_decode($arra);
 print_r($arrays);
+
+echo "<br/>";
+echo "<br/>";
+$jsons = '{"name":"Tuhin","profession":"Developer","Company":"Danpite"}';
+$array = json_decode($json);
+print_r($array);
 
 
 
