@@ -63,16 +63,25 @@ $multiD = [
 ];
 
 arsort($multiD);
-for($x = 0; $x < count($multiD) ; $x ++){ 
+for($x = 0; $x <count($multiD) ; $x ++){ 
     echo "<p><b>Row Number $x </b> </p>";
     echo "<ul>";
     foreach($multiD[$x] as $key=>$value){ 
         echo "<li>$key : $value</li>";
     }
-    echo "</>";
+    echo "</ul>";
 }
 
-;
+echo "<br/>";
+echo "<br/>";
+
+function Functions (){ 
+    echo "I come From Function";
+}
+
+$nw = ['hello','world',Functions()];
+print_r($nw);
+
 
 
 
