@@ -101,8 +101,10 @@ echo "<br/>";
 
 $numbers = [12,6,4,7,8];
 $lent = count($numbers);
-foreach($numbers[$lent] as $num){ 
-    
+for($x = 0; $x < $lent; $x++){ 
+    if($numbers[$x] == 7) continue;{ 
+        echo $numbers[$x]." ";
+    }
 }
 
 ?>
