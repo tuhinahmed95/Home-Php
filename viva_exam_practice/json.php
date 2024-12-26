@@ -96,5 +96,13 @@ $strings = "Tuhin Ahmed From Gaibandha";
 $arrays = explode(" ",$strings );
 print_r($arrays);
 
+echo "<br/>";
+echo "<br/>";
+
+$numbers = [12,6,4,7,8];
+$lent = count($numbers);
+foreach($numbers[$lent] as $num){ 
+    
+}
 
 ?>
