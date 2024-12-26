@@ -1,4 +1,7 @@
 <?php
+
+use function Symfony\Component\String\b;
+
 $json = ['name'=>'tuhin','ahmed','khan','rafia'];
 $jsondata = json_encode($json);
 echo $jsondata;
@@ -38,9 +41,11 @@ print_r($arrays);
 
 echo "<br/>";
 echo "<br/>";
+
 $jsons = '{"name":"Tuhin","profession":"Developer","Company":"Danpite"}';
 $array = json_decode($json);
 print_r($array);
+
 echo "<br/>";
 echo "<br/>";
 
@@ -48,6 +53,23 @@ $array = ['tuhin','ahmed','kabir','khan'];
 $json = json_encode($array);
 echo $json;
 
+echo "<br/>";
+echo "<br/>";
+
+$multiD = [
+    ['name'=>'tuhin','profession'=>'Developer'],
+    ['address'=>'gaibandha','status'=>'single'],
+    ['education'=>'masters','university'=>'national University']
+];
+
+for($x = 0; $x <ul count($multiD) ; $x ++){ 
+    echo "<p><b>Row Number $x </b> </p>";
+    echo "<ul>";
+    foreach($multiD[$x] as $key=>$value){ 
+        echo "<li>$key : $value</li>";
+    }
+    echo "</ul>";
+}
 
 
 
