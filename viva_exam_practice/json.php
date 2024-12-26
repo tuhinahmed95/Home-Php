@@ -41,6 +41,12 @@ echo "<br/>";
 $jsons = '{"name":"Tuhin","profession":"Developer","Company":"Danpite"}';
 $array = json_decode($json);
 print_r($array);
+echo "<br/>";
+echo "<br/>";
+
+$array = ['tuhin','ahmed','kabir','khan'];
+$json = json_encode($array);
+echo $json;
 
 
 
