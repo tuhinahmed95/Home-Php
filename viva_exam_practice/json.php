@@ -82,7 +82,12 @@ function Functions (){
 $nw = ['hello','world',Functions()];
 print_r($nw);
 
+echo "<br/>";
+echo "<br/>";
 
+$cas = ['tuhin','ahmed','khan','kabir'];
+$imp = implode(" ", $cas);
+echo $imp;
 
 
 ?>
