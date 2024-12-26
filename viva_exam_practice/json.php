@@ -89,5 +89,12 @@ $cas = ['tuhin','ahmed','khan','kabir'];
 $imp = implode(" ", $cas);
 echo $imp;
 
+echo "<br/>";
+echo "<br/>";
+
+$strings = "Tuhin Ahmed From Gaibandha";
+$arrays = explode(" ",$strings );
+print_r($arrays);
+
 
 ?>
