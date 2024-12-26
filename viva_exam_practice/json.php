@@ -62,14 +62,17 @@ $multiD = [
     ['education'=>'masters','university'=>'national University']
 ];
 
-for($x = 0; $x <ul count($multiD) ; $x ++){ 
+arsort($multiD);
+for($x = 0; $x < count($multiD) ; $x ++){ 
     echo "<p><b>Row Number $x </b> </p>";
     echo "<ul>";
     foreach($multiD[$x] as $key=>$value){ 
         echo "<li>$key : $value</li>";
     }
-    echo "</ul>";
+    echo "</>";
 }
+
+;
 
 
 
