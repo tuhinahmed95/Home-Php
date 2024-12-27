@@ -1,6 +1,5 @@
 <?php
-$numbers = [3,7,8,9];
-echo (max($numbers));
+
 echo "<br/>";
 echo (min($numbers));
 
