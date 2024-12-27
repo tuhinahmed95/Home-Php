@@ -1,10 +1,4 @@
 <?php
-
-echo "<br/>";
-echo (min($numbers));
-
-echo "<br/>";
-
 $arrays = ['Tuhin','Ahmed','Rafia','Kabir','Khan'];
 rsort($arrays);
 foreach($arrays as $array){ 
