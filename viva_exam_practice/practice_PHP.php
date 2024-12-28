@@ -28,12 +28,12 @@ echo "<br/>";
 echo "<br/>";
 
 $var = [10,45,7,9,-4,90,100];
-$lent = count($var);
-
-for($x = 0; $x < $lent; $x ++){ 
-    if($var[$x] == -4)break;
-    echo $var[$x]." ";
+foreach($var as $v){ 
+    if($v == -4)continue;
+    echo $v. " ";
 }
+
+
 
 echo "<br/>";
 echo "<br/>";
