@@ -31,7 +31,12 @@ echo "<br/>";
 ?>
 <html>
 <body>
-
+<style>
+    table.th.td{ 
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
   <?php
     $cname = "user";
     $cvalue = "John";
@@ -45,7 +50,17 @@ echo "<br/>";
         echo "Cookie Name Is " . $cname . " Set <br/>";
         echo "Cookie Value Is ". $cvalue . " Set ";
     }
+
+    echo "<br/>";
+    echo "<br/>";
   ?>
+    
+    <table>
+        <tr>
+            <td>Filter Name</td>
+            <td>Filter id</td>
+        </tr>
+    </table>
     
 </body>
 </html>
