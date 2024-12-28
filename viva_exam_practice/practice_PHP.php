@@ -54,7 +54,7 @@ echo "<br/>";
     echo "<br/>";
     echo "<br/>";
 
-    $expression = 'green';
+    $expression = '';
 
     switch($expression){ 
         case 'red':
@@ -64,11 +64,18 @@ echo "<br/>";
         echo "Favorite Color is Green";
         break;
         default:
-        echo "Favorite color is blue";
+        echo "Favorite color is Blue";
     }
 
     echo "<br/>";
     echo "<br/>";
+
+    $num = 1;
+    while( $num > 10){ 
+        echo $num;
+        $num ++;
+    }
+    
   ?>
     
    
