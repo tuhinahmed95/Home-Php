@@ -53,6 +53,22 @@ echo "<br/>";
 
     echo "<br/>";
     echo "<br/>";
+
+    $expression = 'green';
+
+    switch($expression){ 
+        case 'red':
+        echo "Favorite Color is red";
+        break;
+        case 'green';
+        echo "Favorite Color is Green";
+        break;
+        default:
+        echo "Favorite color is blue";
+    }
+
+    echo "<br/>";
+    echo "<br/>";
   ?>
     
    
