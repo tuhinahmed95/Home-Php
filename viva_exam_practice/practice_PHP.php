@@ -19,6 +19,9 @@ var_dump($n);
 echo "<br/>";
 echo "<br/>";
 
+echo "Today is ". date("y/m/d")."<br/>";
+echo "Today is " . date("d-m-y")."<br/>";
+echo "Today is ". date("d.m.y");
 
 
 echo "<br/>";
