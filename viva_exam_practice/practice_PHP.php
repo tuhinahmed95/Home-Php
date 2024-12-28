@@ -33,6 +33,14 @@ foreach($var as $v){
     echo $v. " ";
 }
 
+echo "<br/>";
+echo "<br/>";
+
+$va = 5;
+do{ 
+    echo $va." ";
+    $va++;
+}while($va < 20);
 
 
 echo "<br/>";
