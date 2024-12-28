@@ -63,7 +63,7 @@ echo "<br/>";
 
         <?php
             foreach(filter_list() as $id =>$filter){ 
-                echo '<tr> <td>'.$filter'.</td> <td>'.filter_id($filter).'</td></tr>';
+                echo '<tr> <td>'.$filter.'</td> <td>'.filter_id($filter).'</td></tr>';
             }
         ?>
     </table>
