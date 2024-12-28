@@ -55,15 +55,16 @@ echo "<br/>";
     echo "<br/>";
   ?>
     
+   
     <table>
         <tr>
             <td>Filter Name</td>
-            <td>Filter id</td>
+            <td>Filter Id</td>
         </tr>
 
         <?php
-            foreach(filter_list() as $id =>$filter){ 
-                echo '<tr> <td>'.$filter.'</td> <td>'.filter_id($filter).'</td></tr>';
+            foreach(filter_list() as $id => $filter){ 
+                echo '<tr> <td>'.$filter .'</td> <td>' .filter_id($filter) .'</td> </tr>';
             }
         ?>
     </table>
