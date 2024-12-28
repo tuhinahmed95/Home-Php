@@ -27,7 +27,16 @@ echo "Today is ". date("d.m.y");
 echo "<br/>";
 echo "<br/>";
 
+$var = [10,45,7,9,-4,90,100];
+$lent = count($var);
 
+for($x = 0; $x < $lent; $x ++){ 
+    if($var[$x] == -4)break;
+    echo $var[$x]." ";
+}
+
+echo "<br/>";
+echo "<br/>";
 ?>
 <html>
 <body>
@@ -70,11 +79,6 @@ echo "<br/>";
     echo "<br/>";
     echo "<br/>";
 
-    $num = 1;
-    while( $num > 10){ 
-        echo $num;
-        $num ++;
-    }
     
   ?>
     
