@@ -19,26 +19,30 @@ var_dump($n);
 echo "<br/>";
 echo "<br/>";
 
-$cname = "User";
-$cvalue = 'John';
-setcookie($cname,$cvalue,time() + (86000*30),"/");
 
 
+echo "<br/>";
+echo "<br/>";
 
 
 ?>
-
 <html>
 <body>
-    <?php
+
+  <?php
+    $cname = "user";
+    $cvalue = "John";
+    setcookie($cname,$cvalue, time() + (86000*30),"/");
+  ?>
+
+  <?php
     if(!isset($_COOKIE[$cname])){ 
-        echo " Cookie name ". $cname . " Is Not Set";
+        echo "Cookie Is " . $cname . " Is Not Set ";
     }else{ 
-        echo "Cookie ". $cname . " is Set";
-        echo "value " . $cvalue . " Set";
+        echo "Cookie Name Is " . $cname . " Set <br/>";
+        echo "Cookie Value Is ". $cvalue . " Set ";
     }
-
-
-    ?>
+  ?>
+    
 </body>
 </html>
