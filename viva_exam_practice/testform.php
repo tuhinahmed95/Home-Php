@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+  <h1>Hello</h1>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
       Name :  <input type="text" name="fname"><br><br>
       Age  : <input type="number" name="age"><br><br>

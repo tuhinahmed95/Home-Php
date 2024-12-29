@@ -5,9 +5,18 @@ function CallBack($item){
 }
 
 $array = ['banana','mango','pineapple','orragne'];
+print_r($array);
 
 $new = array_map("CallBack",$array);
 print_r($new);
+
+echo "<br/>";
+echo "<br/>";
+
+function Mfunction($num1,$num2,$num3 = 10){ 
+    echo $num1 + $num2 + $num3;
+}
+Mfunction(5,10);
 
 echo "<br/>";
 echo "<br/>";
@@ -41,7 +50,14 @@ do{
     echo $va." ";
     $va++;
 }while($va < 20);
+echo "<br/>";
+echo "<br/>";
 
+$strings = ["red",'green','blue','yello'];
+foreach($strings as $string){ 
+    if($string == 'blue')continue;
+    echo $string . "<br/>";
+}
 
 echo "<br/>";
 echo "<br/>";
