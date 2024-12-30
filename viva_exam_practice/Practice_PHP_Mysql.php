@@ -57,4 +57,10 @@ foreach ($multi as $rowIndex =>$row){
     echo "</ul>";
 }
 
+$dimention = ['name'=>'tuhin','Profession'=>"Developer","compmay"=>"danpite"];
+foreach($dimention as $key=>$value){ 
+    echo "$key $value" ."<br/> ";
+}
+
+
 ?>
