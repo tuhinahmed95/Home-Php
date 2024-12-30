@@ -11,4 +11,14 @@ foreach($array as $arr){
     if($arr == 0)continue;
     echo $arr . " ";
 }
+echo "<br/>";
+echo "<br/>";
+
+$arrays = ['tuhin','ahmed','khan','kabir'];
+array_shift($arrays);
+print_r($arrays);
+
+
+
+
 ?>
