@@ -15,9 +15,11 @@ echo "<br/>";
 echo "<br/>";
 
 $arrays = ['tuhin','ahmed','khan','kabir'];
-array_shift($arrays);
+array_splice($arrays,0,3);
 print_r($arrays);
 
+echo "<br/>";
+echo "<br/>";
 
 
 
