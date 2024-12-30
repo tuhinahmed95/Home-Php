@@ -27,10 +27,13 @@ $multi = [
     ['hello','world']
 ];
 
-for($row = 0; $row < 3; $row ++){ 
+for($row = 0; $row < count($multi); $row ++){ 
     echo "Row Number $row <br/>";
     echo "<ul>";
-    foreach()
+    for($col = 0; $col < count($multi[$row]); $col++){ 
+        echo "<li>". $multi[$row][$col]  ."</li>";
+    }
+    echo "</ul>";
 }
 
 ?>
