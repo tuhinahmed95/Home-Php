@@ -24,10 +24,11 @@ echo "<br/>";
 $multi = [
     ['hey','tuhin'],
     ['hi','abir'],
-    ['hello','world']
+    ['hello','world'],
+    ['hello','world,How are you'],
 ];
 
-$lents = count($multi);
+// $lents = count($multi);
 
 // for($row = 0; $row < count($multi); $row ++){ 
 //     echo "Row Number $row <br/>";
@@ -46,5 +47,14 @@ $lents = count($multi);
 //     }
 //     echo "</ul>";
 // }
+
+foreach ($multi as $rowIndex =>$row){ 
+    echo "Row Number $rowIndex";
+    echo "<ul>";
+    foreach($row as $value){ 
+        echo "<li>".$value."</li>";
+    }
+    echo "</ul>";
+}
 
 ?>
