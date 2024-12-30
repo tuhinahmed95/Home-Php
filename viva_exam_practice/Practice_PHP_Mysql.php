@@ -62,5 +62,21 @@ foreach($dimention as $key=>$value){
     echo "$key $value" ."<br/> ";
 }
 
+echo "<br/>";
+echo "<br/>";
+
+$math = [12,45,78,0,5,89];
+print_r(max($math));
+
+echo "<br/>";
+echo "<br/>";
+
+function CallBack($item){ 
+    return strlen($item);
+}
+
+$cback = ['tuhin','shahdat','ashad','jashim'];
+$new = array_map("CallBack",$cback);
+print_r($new);
 
 ?>
