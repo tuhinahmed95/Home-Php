@@ -21,6 +21,16 @@ print_r($arrays);
 echo "<br/>";
 echo "<br/>";
 
+$multi = [
+    ['hey','tuhin'],
+    ['hi','abir'],
+    ['hello','world']
+];
 
+for($row = 0; $row < 3; $row ++){ 
+    echo "Row Number $row <br/>";
+    echo "<ul>";
+    foreach()
+}
 
 ?>
