@@ -100,6 +100,12 @@ echo "<br/>";
 
 $users = "tuhin";
 $usersName = "Ahmed";
-
+setcookie($users,$usersName,time()+ (36000*30),"/");
+if(!isset($_COOKIE[$users])){ 
+    echo "User Name Is Not " . $users. "Set";
+}else{ 
+    echo "User Name Is " . $users . "Set";
+    echo "UserName " . $_COOKIE[$users]. " Is Set ";
+}
 
 ?>
