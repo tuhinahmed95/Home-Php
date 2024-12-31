@@ -95,5 +95,17 @@ $array = "tuhin ahmed kabir khan mondon";
 $str = explode(" ", $array);
 print_r($str);
 
+echo "<br/>";
+echo "<br/>";
+
+$users = "tuhin";
+$usersName = "Ahmed";
+setcookie($users,$usersName, time() + (36000*30), "/");
+if(!$_SESSION['$userName']){ 
+    echo "User Name Is Not Set $users";
+}else{ 
+    echo "User Name Is Set $users";
+    echo "user $userName";
+}
 
 ?>
