@@ -88,5 +88,12 @@ $string = ['tuhin','ahmed','khan','kabir','mondol'];
 $arr = implode(" ",$string);
 echo $arr;
 
+echo "<br/>";
+echo "<br/>";
+
+$array = "tuhin ahmed kabir khan mondon";
+$str = explode(" ", $array);
+print_r($str);
+
 
 ?>
