@@ -121,7 +121,7 @@ $multiArray = [
 foreach($multiArray as $row =>$value){ 
     echo "Row Number is $row"."<br/>";
     foreach($value as $m){ 
-        if($m == $row[2])break;
+        if($m == $row)break;
         echo $m . " ";
     }
 }
