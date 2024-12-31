@@ -104,8 +104,24 @@ setcookie($users,$usersName,time()+ (36000*30),"/");
 if(!isset($_COOKIE[$users])){ 
     echo "User Name Is Not " . $users. "Set";
 }else{ 
-    echo "User Name Is " . $users . "Set";
+    echo "Users  Is " . $users . " Set " ."<br/>";
     echo "UserName " . $_COOKIE[$users]. " Is Set ";
+}
+
+echo "<br/>";
+echo "<br/>";
+
+$multiArray = [
+    ['tuhin','shakil'],
+    ['abir','saikat'],
+    ['jashim','sabbir'],
+    ['shahdat','ashad']
+];
+
+for($row = 0; $row < count($multiArray); $row++){ 
+    echo "Row Number $row"."<br/>";
+    echo "<ul>";
+    for($col = 0; $col < count())
 }
 
 ?>
