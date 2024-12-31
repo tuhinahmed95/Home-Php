@@ -118,10 +118,10 @@ $multiArray = [
     ['shahdat','ashad']
 ];
 
-for($row = 0; $row < count($multiArray); $row++){ 
-    echo "Row Number $row"."<br/>";
-    echo "<ul>";
-    for($col = 0; $col < count())
+foreach($multiArray as $row =>$value){ 
+    echo "Row Number is $row"."<br/>";
+    foreach($value as $m){ 
+        echo $m ." ";
+    }
 }
-
 ?>
