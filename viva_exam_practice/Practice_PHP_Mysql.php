@@ -79,4 +79,14 @@ $cback = ['tuhin','shahdat','ashad','jashim'];
 $new = array_map("CallBack",$cback);
 print_r($new);
 
+
+echo "<br/>";
+echo "<br/>";
+
+
+$string = ['tuhin','ahmed','khan','kabir','mondol'];
+$arr = implode(" ",$string);
+echo $arr;
+
+
 ?>
