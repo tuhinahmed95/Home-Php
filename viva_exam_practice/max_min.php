@@ -39,13 +39,6 @@ for($x =1 ; $x < $lenght ; $x++){
 
 echo "<br/>";
 
-$rafia = [
-    ["name"=>"tuhin","profession"=>"developer"],
-    ["first"=>"Rafia","profession"=>"webdeveloper developer"],
-];
 
-foreach($rafia as $key=>$rafi){ 
-    echo $rafia [$key][$rafi];
-}
 
 ?>
