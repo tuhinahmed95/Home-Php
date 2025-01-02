@@ -89,7 +89,7 @@ setcookie($user,$userName, time()+ (36000*30),"/");
 if(!isset($_COOKIE[$user])){ 
     echo "User Is Not". $user . " Set ";
 }else{ 
-    echo "Cookie User Is ". $user. " Set ";
+    echo "Cookie User Is ". $user. " Set "."<br/>";
     echo "Cookie Name Is ". $_COOKIE[$user]. " Set ";
 }
 
