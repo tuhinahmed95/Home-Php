@@ -80,5 +80,19 @@ $arrays = ['tuhin','ahmed','khan','kabir','shakil','mondol'];
 rsort($arrays);
 print_r($arrays);
 
+echo "<br/>";
+echo "<br/>";
+
+$user = 'john';
+$userName = "Tuhin Ahmed";
+setcookie($user,$userName, time()+ (36000*30),"/");
+if(!isset($_COOKIE[$user])){ 
+    echo "User Is Not". $user . " Set ";
+}else{ 
+    echo "Cookie User Is ". $user. " Set ";
+    echo "Cookie Name Is ". $_COOKIE[$user]. " Set ";
+}
+
+
 
 ?>
