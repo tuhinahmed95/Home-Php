@@ -41,11 +41,27 @@ echo "<br/>";
 echo "<br/>";
 
 function HelloFunction($num1, $num2,$num3 = 30){ 
-    echo $num1 + $num2 + $num3;
+    echo $num1 + $num2 * $num3;
 
 }
-HelloFunction(10,20);
+HelloFunction(5,5);
 
 
+echo "<br/>";
+echo "<br/>";
+
+$array = [
+    ['tuhin','ahmed'],
+    ['abir','islam'],
+    ['ripon','mondol'],
+    ['chanchal','bsswas']
+];
+foreach($array as $row=>$value){ 
+    echo "Row Number $row"."<br/>";
+    foreach($value as $data){ 
+        echo $data." ";
+    }
+
+}
 
 ?>
