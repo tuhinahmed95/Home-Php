@@ -73,7 +73,12 @@ function callback($item){
 $call = ['hello','world','how','are','you'];
 $back = array_map("callback",$call);
 print_r($back);
+echo "<br/>";
+echo "<br/>";
 
+$arrays = ['tuhin','ahmed','khan','kabir','shakil','mondol'];
+array_pop($arrays);
+print_r($arrays);
 
 
 ?>
