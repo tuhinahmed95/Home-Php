@@ -38,6 +38,13 @@ for($x =1 ; $x < $lenght ; $x++){
 }
 
 echo "<br/>";
+echo "<br/>";
+
+function HelloFunction($num1, $num2,$num3 = 30){ 
+    echo $num1 + $num2 + $num3;
+
+}
+HelloFunction(10,20);
 
 
 
