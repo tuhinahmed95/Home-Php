@@ -64,4 +64,16 @@ foreach($array as $row=>$value){
 
 }
 
+echo "<br/>";
+echo "<br/>";
+
+function callback($item){ 
+    return strlen($item);
+}
+$call = ['hello','world','how','are','you'];
+$back = array_map("callback",$call);
+print_r($back);
+
+
+
 ?>
