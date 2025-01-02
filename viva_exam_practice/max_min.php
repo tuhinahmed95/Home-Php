@@ -77,7 +77,7 @@ echo "<br/>";
 echo "<br/>";
 
 $arrays = ['tuhin','ahmed','khan','kabir','shakil','mondol'];
-array_pop($arrays);
+array_unshift($arrays,'hello','world');
 print_r($arrays);
 
 
