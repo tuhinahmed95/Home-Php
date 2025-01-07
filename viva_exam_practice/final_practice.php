@@ -195,9 +195,64 @@ echo "<br/>";
 echo "<br/>";
 
 
-$aso = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
-$new = array_change_key_case($aso,CASE_LOWER);
-print_r($new);
+$aso = ['name','profession'];
+$as = ["tuhin",'software Enginier'];
+$add = array_combine($aso,$as);
+
+
+echo "<br/>";
+echo "<br/>";
+
+$aso = ['name','profession','name','abir','name','a','d','a'];
+print_r(array_count_values($aso));
+
+echo "<br/>";
+echo "<br/>";
+
+$asso = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
+$assoss = ['name'=>"tuhin",'profession'=>'software Enginier','c'=>"logic"];
+$nead = array_diff_key($asso,$assoss);
+print_r($nead);
+
+echo "<br/>";
+echo "<br/>";
+
+function CallBack($item){ 
+    return strlen($item);
+}
+$a = ['hi','tuhin','how','are','you'];
+$out = array_map("CallBack",$a);
+print_r($out);
+
+echo "<br/>";
+echo "<br/>";
+
+$json = '{"name":"Tuhin","address":"Gaibandha","Profession":"Developer"}';
+$array = json_decode($json);
+print_r($array);
+
+echo "<br/>";
+echo "<br/>";
+
+
+$b = ['hi','tuhin','how','are','you'];
+$json = json_encode($b);
+echo $json. " ";
+
+echo "<br/>";
+echo "<br/>";
+
+$ex = "Tuhin Ahmed";
+print_r(explode(" ",$ex));
+
+echo "<br/>";
+
+
+$d = ['hi','tuhin','how','are','you'];
+echo (implode(" ", $d));
+
+
+
 
 
 
