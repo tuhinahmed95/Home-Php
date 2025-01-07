@@ -251,6 +251,29 @@ echo "<br/>";
 $d = ['hi','tuhin','how','are','you'];
 echo (implode(" ", $d));
 
+echo"<br/>";
+echo"<br/>";
+$positive = [12,56,78,-5,45,90];
+foreach($positive as $p ){ 
+    if($p == -5)continue;{ 
+        echo $p."<br/>"; 
+    }
+}
+
+echo "<br/>";
+echo "<br/>";
+
+$user = 'john';
+$userName = 'Tuhin';
+setcookie($user,$userName, time() + (36000*30),"/");
+if(!isset($_COOKIE[$user])){ 
+    echo "Cokkie is Not Set $user <br/>";
+}else{ 
+    echo "Cookie Is Set $user <br/>";
+    echo "Cookie Name Is Set $_COOKIE[$user]";
+}
+ 
+
 
 
 
