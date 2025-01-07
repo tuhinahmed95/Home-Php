@@ -88,7 +88,26 @@ switch($color){
 
 echo "<br/>";
 echo "<br/>";
-
+$y = 1;
+while($y <6){ 
+    echo $y;
+    $y++;
+}
+echo "<br/>";
+echo "<br/>";
+$z = 1;
+do{ 
+    echo $z;
+    $z++;
+} while($z <5);
+echo "<br/>";
+echo "<br/>";
+$nm = 1;
+while($nm <10){ 
+    if($nm == 5)continue;
+    echo $nm;
+    $nm++;
+}
 
 
 
