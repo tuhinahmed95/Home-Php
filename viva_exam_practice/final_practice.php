@@ -146,12 +146,35 @@ echo "<br/>";
 echo "<br/>";
 
 $assos = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
+$assos +=['address'=>"gaibandha",'status'=>'single'];
+print_r($assos); 
 $assos['company'] = 'BrainStation';
 // print_r($assos);
 foreach($assos as $key =>$value){ 
     echo "$key $value <br/>";
    
 }
+echo "<br/>";
+$car = ['ford','volvo','toyota'];
+foreach($car as &$c){ 
+    $c = "Toyota";
+}
+unset($c);
+print_r($car);
+// var_dump($car);
+echo "<br/>";
+echo "<br/>";
+
+$carr = ['ford','volvo','toyota','lambergini','audi','bmw'];
+rsort($carr);
+print_r($carr);
+echo "<br/>";
+echo "<br/>";
+
+$assos = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
+ksort($assos);
+print_r($assos);
+
 
 
 
