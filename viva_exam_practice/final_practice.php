@@ -74,6 +74,21 @@ echo $n;
 echo "<br/>";
 echo "<br/>";
 
+$color = "red";
+switch($color){ 
+    case "red":
+        echo "Favorite red";
+    break;
+    case "green":
+        echo "favorite green";
+    break;
+    default:
+    echo "favorite black";        
+}
+
+echo "<br/>";
+echo "<br/>";
+
 
 
 
