@@ -102,12 +102,40 @@ do{
 } while($z <5);
 echo "<br/>";
 echo "<br/>";
-$nm = 1;
-while($nm <10){ 
-    if($nm == 5)continue;
-    echo $nm;
-    $nm++;
+
+for($x = 0; $x < 10; $x ++){ 
+    if( $x ==5) break;{ 
+        echo $x."<br/>";
+    }
 }
+echo "<br/>";
+echo "<br/>";
+
+$colors =[ 
+     ['red','green','orrange','black','white'],
+     ['red','green','PowderBlue','black','white'],
+     ['red','green','PineApple','black','white'],
+
+    ];
+
+foreach ($colors as $row=>$value){ 
+    echo "Row = $row <br/>";
+    foreach($value as $data){ 
+        echo $data ."<br/>";
+    }
+}   
+echo "<br/>";
+echo "<br/>";
+
+function MyFunction($num1, $num2,$num3 = 50){ 
+    echo "The Sum Is =". $num1 + $num2 -$num3;
+}
+MyFunction(10,20);
+
+
+// foreach($colors as $col){ 
+//     echo $col."<br/>";
+// }
 
 
 
