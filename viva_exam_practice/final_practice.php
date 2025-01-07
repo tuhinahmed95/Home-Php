@@ -172,8 +172,25 @@ echo "<br/>";
 echo "<br/>";
 
 $assos = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
-ksort($assos);
+krsort($assos);
 print_r($assos);
+
+echo "<br/>";
+echo "<br/>";
+
+$multiDimention = [
+    ['name'=>'tuhin','profession'=>'enginieer'],
+    ['status'=>'single','age'=>30],
+    ['address'=>'gaibandha','education'=>'M.A']
+];
+
+foreach ($multiDimention as $row => $multiD){ 
+    echo "Row Is $row <br/>";
+    foreach($multiD as $col => $value){ 
+        echo "$col =  $value <br/>";
+    }
+}
+
 
 
 
