@@ -191,6 +191,15 @@ foreach ($multiDimention as $row => $multiD){
     }
 }
 
+echo "<br/>";
+echo "<br/>";
+
+
+$aso = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
+$new = array_change_key_case($aso,CASE_LOWER);
+print_r($new);
+
+
 
 
 
