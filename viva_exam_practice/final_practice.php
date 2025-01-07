@@ -12,7 +12,31 @@ echo trim($n);
 echo "<br/>";
 echo "<br/>";
 $na = "Tuhin Ahmed";
-echo substr($na, 5,5);
+echo substr($na, 3);
+echo "<br/>";
+
+$test = "Hello World \"how are you\"";
+echo $test;
+
+echo "<br/>";
+echo "<br/>";
+$test2 = "hellow world \$name";
+echo $test2;
+echo "<br/>";
+echo "<br/>";
+
+$t = "hellow \rWorld";
+echo $t;
+echo "<br/>";
+$num = 'tuhin';
+$string = (int)$num;
+echo $string;
+echo "<br/>";
+echo "<br/>";
+$numbers = [12,34,56,89,99];
+print_r(max($numbers));
+
+
 
 
 ?>
