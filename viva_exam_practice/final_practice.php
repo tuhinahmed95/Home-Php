@@ -34,7 +34,46 @@ echo $string;
 echo "<br/>";
 echo "<br/>";
 $numbers = [12,34,56,89,99];
-print_r(max($numbers));
+$lent = count($numbers);
+for($x = 0; $x < $lent ; $x ++){ 
+    if($numbers[$x] == 56)continue;{ 
+        echo $numbers[$x]."<br/> ";
+    }
+}
+echo "<br/>";
+echo "<br/>";
+echo rand(10,20);
+echo "<br/>";
+echo "<br/>";
+$sqr = 64;
+echo sqrt($sqr);
+echo "<br/>";
+echo "<br/>";
+echo round(5.7);
+echo "<br/>";
+echo abs(-6.8);
+echo "<br/>";
+echo "<br/>";
+define('names',['tuhin abir saikot']);
+print_r(names);
+// print_r(min($numbers));
+echo "<br/>";
+
+const name = "Tuhin Ahmed";
+echo name;
+echo "<br/>";
+define('namess','hi this is tuhin');
+function Test(){ 
+    echo namess;
+}
+Test();
+echo "<br/>";
+echo "<br/>";
+$n = 10;
+echo $n;
+echo "<br/>";
+echo "<br/>";
+
 
 
 
