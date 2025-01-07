@@ -136,7 +136,22 @@ MyFunction(10,20);
 // foreach($colors as $col){ 
 //     echo $col."<br/>";
 // }
+echo "<br/>";
+echo "<br/>";
+$car = ['ford','volvo','toyota'];
+$car[10] = "hayavusa";
+// array_pop($car);
+print_r($car);
+echo "<br/>";
+echo "<br/>";
 
+$assos = ['name'=>"tuhin",'profession'=>'software Enginier','company'=>"logic"];
+$assos['company'] = 'BrainStation';
+// print_r($assos);
+foreach($assos as $key =>$value){ 
+    echo "$key $value <br/>";
+   
+}
 
 
 
